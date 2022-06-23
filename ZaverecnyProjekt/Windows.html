@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Metas -->
+<title>Edukační Web - Jan Beníšek</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/ikona.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="host_version">
+
+    <!-- Modal -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" >
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header tit-up">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Účet</h4>
+                </div>
+                <div class="modal-body customer-box">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li><a class="active" href="#Login" data-toggle="tab">Přihlášení</a></li>
+                        <li><a href="#Registration" data-toggle="tab">Registrace</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="Login">
+                            <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="email1" placeholder="Jméno" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="exampleInputPassword1" placeholder="Email"
+                                            type="email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+                                            Odeslat
+                                        </button>
+                                        <a class="for-pwd" href="javascript:;">Zapomněli jste heslo?</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="Registration">
+                            <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" placeholder="Jméno" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="email" placeholder="Email" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="mobile" placeholder="Tel. Číslo" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="password" placeholder="Heslo" type="password">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                            Uložit &amp; Pokračovat
+                                        </button>
+                                        <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                            Zrušit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="progress-br float shadow">
+                <div class="progress__item"></div>
+            </div>
+        </div>
+    </div>
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="t-rex-runner-gh-pages/index.html">
+                    <img src="images/ikona.png" alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host"
+                     aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbars-host">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item "><a class="nav-link" href="index.html">Hlavní stránka</a></li>
+                        <li class="nav-item"><a class="nav-link" href="HTML.html">HTML</a></li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="CSS.html">CSS </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="C.html">Jazyk C
+                            </a>
+
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="Linux.html">LINUX</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="Windows.html">WINDOWS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Bootstrap.html">BOOTSTRAP</a></li>
+                       
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log orange" href="#" data-toggle="modal"
+                                data-target="#login"><span>Účet</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- End header -->
+
+    <div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel"
+        data-pause="hover" data-interval="false">
+        <!-- Indicators -->
+
+
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div id="home" class="first-section" style="background-image:url('images/Hlavni-stranka.jpg');">
+                    <div class="dtab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 text-center">
+                                    <div class="big-tagline">
+                                        <h2> <strong>WINDOWS</strong> </h2>
+                                    </div>
+                                </div>
+                            </div><!-- end row -->
+                        </div><!-- end container -->
+                    </div>
+                </div><!-- end section -->
+            </div>
+            <!-- Left Control -->
+
+        </div>
+    </div>
+
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>Windows</h3>
+                    <p class="lead">Microsoft Windows je označení několika operačních systémů od firmy Microsoft.
+                        Všechny mají grafické rozhraní. </p>
+                </div>
+            </div><!-- end title -->
+        </div><!-- end carousel -->
+    </div><!-- end col -->
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 blog-post-single">
+                    <div class="container">
+                        <h2 id="his">Historie</h2>
+                        &nbsp;
+                        <div>
+                            Grafické uživatelské rozhraní (GUI) bylo poprvé použito v roce 1973 v počítači Xerox Alto
+                            pod názvem WIMP.
+                            Jeho popularizaci mezi běžnými uživateli zajistil v roce 1983 počítač Apple Lisa a v roce
+                            1984 pak masivně
+                            Apple Macintosh. Počítače IBM PC kompatibilní, které byly uvedeny na trh v roce 1981,
+                            používaly systém
+                            MS-DOS, který používal textové, grafické rozhraní musely řešit programy samostatně
+                            (například textový editor
+                            Text602), což bylo pro programátory pracné a nevýhodné. Úplně první předběžná vydání
+                            Microsoft Windows byly
+                            vydány v letech 1983 až 1985. První Microsoft Windows 1.0 byly uvedeny v roce 1985 jako
+                            nadstavba systému
+                            MS-DOS. Komerčně úspěšné byly Windows 3.0 vydané v roce 1990.
+                        </div>
+                       
+                        &nbsp;
+                        <h3 id="dos">Windows pro DOS</h3>
+                        <div>
+                            Windows pro DOS je označení pro první grafický systém, který firma Microsoft začala prodávat
+                            v roce 1985,
+                            avšak není to termín, který by sama firma Microsoft pro tuto svoji řadu systémů používala
+                            (používáno bylo
+                            označení Microsoft Windows s číselným označením verze). Nejednalo se o operační systém v
+                            pravém slova
+                            smyslu, ale o nadstavbu nad 16bitový systém MS-DOS (DOS měl pouze textové uživatelské
+                            rozhraní s příkazovým
+                            řádkem, systém nezajišťoval plnou kontrolu nad počítačem). Tyto Windows pro DOS se spouštěly
+                            jako běžný
+                            program až poté, co nastartoval systém DOS. Windows pro DOS používaly DOS pro své I/O
+                            operace (zejména pro
+                            přístup k souborovému systému). Tvorba grafického uživatelského rozhraní byla naopak hlavním
+                            úkolem Windows
+                            pro DOS, čímž bylo programátorům nabídnuto jednotné aplikační rozhraní, jednotný subsystém
+                            pro tisk a
+                            podobně. K tomu byly využívány ovladače zařízení dodávané výrobci hardwaru.
+                        </div>
+                        &nbsp;
+                        <h1 id="verze">Verze windows</h1>
+                        &nbsp;
+                        <h5 id="w1">Windows 1.0</h5>
+                        <div>První verze Windows 1.0 byla na trh uvedena 20. listopadu 1985. Windows 1.0 poskytovaly
+                            jednoduché grafické
+                            rozhraní, ve kterém bylo možné spouštět většinu jednoduchých programů určených původně pro
+                            DOS. Okna se
+                            nemohla překrývat (s výjimkou chybových dialogů), některé složitější programy se v tomto
+                            prostředí používat
+                            nedaly. Naopak bylo výhodnější používat grafické aplikace určené přímo pro tento systém,
+                            které postupně
+                            vytlačily programy určené pro DOS (například textový editor Text602 byl nahrazen programy
+                            Microsoft Word,
+                            Ami Pro a podobně).</div>
+                            <div><img src="images/win1.png" alt="" class="win1"></div>
+                        &nbsp;
+                        <h5 id="w2">Windows 2.0</h5>
+                        <div>Verze Windows 2.0 byla vypuštěna v listopadu 1987 a obsahovala několik vylepšení
+                            uživatelského rozhraní a
+                            správy paměti. Ve Windows 2.0 se mohla okna programů překrývat přes druhé a byly změněny a
+                            rozšířeny
+                            klávesové zkratky. Byla také uvedena nová verze pro procesor Intel 80386, která umožnila
+                            preemptivní
+                            multitasking MS-DOS aplikací díky režimu virtuální 8086, avšak aplikace pro Windows stále
+                            využívaly
+                            multitasking kooperativní. Verze 2.1 byla uvedena v květnu 1988 a byla dostupná ve dvou
+                            provedeních:
+                            Windows/286 2.10 a Windows/386 2.10. Označení verzí korespondovalo se schopností využít
+                            rozšířený režim
+                            procesoru Intel 80286 a chráněný režim procesoru Intel 80386, které poskytovaly snadnější
+                            přístup k většímu
+                            množství paměti nad hranici 1 MiB operační paměti RAM.</div>
+                        &nbsp;
+
+                        <h5 id="w3">Windows 3.0 a 3.1</h5>
+                        <div>Prvními systémy, které zaznamenaly komerční úspěch, byly Windows 3.0 (22. 5. 1990) a
+                            Windows 3.1 (18. 3.
+                            1992). Jádro těchto systémů obsahovalo částečnou podporu 32bitových ovladačů, které
+                            přistupovaly k hardwaru
+                            přímo bez využití služeb DOSu a BIOSu. Windows 3.0 a Windows 3.1 měly i lepší design, hlavně
+                            kvůli
+                            dispozicím nových virtuálních paměti a načítatelných virtuálních ovladačů zařízení (VxDs),
+                            které jim
+                            umožnilo sdílení libovolných zařízení mezi okny DOS. Aplikace pro Windows tehdy už mohly
+                            běžet ve chráněném
+                            režimu, který jim dal přístup k několika megabajtům paměti a odstranil povinnost podílet se
+                            na schématu
+                            softwarové virtuální paměti systému. Stále běžely v rámci stejného adresního prostoru, kde
+                            segmentovaná
+                            paměť poskytovala určitý stupeň ochrany a také běžela v multi-taskingu. Bylo možné
+                            doinstalovat rozšíření.
+                            Některé části systému však zůstávaly 16bitové, takže systém mohl být ohrožen nesprávně
+                            fungujícími programy
+                            (na rozdíl od systému OS/2, který plně využíval schopnosti tehdejších 32bitových procesorů
+                            Intel 80386).
+                            Tyto nedostatky nutily uživatele přecházet na novější systém Windows NT (viz níže).</div>
+                        &nbsp;
+                        <h5 id="w95">Windows 95</h5>
+                        <div>Změna vzhledu grafického rozhraní (výměna správce oken) ve Windows 95 (24. 8. 1995)
+                            přinesla intuitivnější
+                            ovládání a vyšší zájem uživatelů. Ihned po vypuštění na trh se první den prodalo 300 000
+                            kopií. Windows 95
+                            obsahoval i podporu protokolu TCP/IP, což znamenalo umožnění přímého přístupu k Internetu
+                            bez instalace
+                            doplňků od jiných dodavatelů (např. Trumpet Winsock), tlačítko Start, podporu dlouhých názvů
+                            souborů – až
+                            255 znaků, a schopnost automaticky detekovat a nakonfigurovat nově připojený hardware do
+                            počítače (Plug and
+                            Play – užívaný dodnes). Mohl nativně spouštět 32bitové aplikace a obsahoval několik
+                            technologických
+                            vylepšení, která zvýšila stabilitu systému oproti Windows 3.1. Bylo představeno několik OEM
+                            Service Releases
+                            (OSR) (velké balíky aktualizací) pro Windows 95, z nichž každý byl hrubě ekvivalentní k
+                            aktualizaci Service
+                            Pack (SP).</div>
+                            <div><img src="images/win95.png" alt="" class="win1"></div>
+                        &nbsp;
+                        <h5 id="w98">Windows 98 a 98 SE</h5>
+                        <div>Dalším vydáním byl Windows 98, uveden 25. 6. 1998. Windows 98 přidal podporu USB,
+                            automatickou aktualizaci
+                            počítače, Internet Explorer 4.01, Panel Snadné spuštění... Microsoft představil i druhou
+                            verzi systému
+                            Windows 98 v květnu 1999, pojmenovanou Windows 98 Second Edition (Druhé Vydání, často
+                            zkracován jako Windows
+                            98 SE), která opravila řadu menších chyb a obsahovala novější verze programů např.: Internet
+                            Explorer 5.0,
+                            Windows Media Player 6.2.</div>
+                        &nbsp;
+                        <h5 id="wMIL">Windows Millennium Edition</h5>
+                        <div>14. 9. 2000 byl uveden systém Windows ME (Millennium Edition), který byl posledním systémem
+                            z řady Windows
+                            pro DOS. V této verzi byl přidán Windows Movie Maker. Tato verze ale moc fanoušků neměla.
+                        </div>
+                        &nbsp;
+                        <h5 id="wNT">Windows NT</h5>
+                        <div>V roce 1993 byla uvedena do prodeje nová řada Windows NT (anglicky New Technology – „nová
+                            technologie“),
+                            která plně využívala schopnosti procesoru Intel 80386 a jeho chráněný režim, pomocí kterého
+                            neztrácí jádro
+                            systému nikdy kontrolu nad počítačem a v něm provozovanými programy. Zajišťuje preemptivní
+                            multitasking,
+                            takže špatně naprogramovaná aplikace nemůže ohrozit běh celého systému. Systém Windows NT
+                            měl vyšší
+                            hardwarové požadavky a byl zamýšlen pro firemní prostředí (tzv. workstation, tj. pracovní
+                            stanice). Označení
+                            NT bylo později z názvů produktů odstraněno, ale stále se jednalo o stejnou řadu operačního
+                            systému. </div>
+                        <div> V řadě systémů Windows NT byla jako první vydána v roce 1993 verze Windows NT 3.1, dále
+                            vznikly Windows NT
+                            3.5 (1994), Windows NT 3.51 (1995), a Windows NT 4.0 (1996), po kterých došlo k opuštění
+                            označení „NT“,
+                            takže dalšími verzemi byly Windows 2000 (2000), Windows XP (2001), Windows XP x64 (2005),
+                            Windows Vista
+                            (2007), Windows 7 (2009), Windows 8 nebo Windows 10 (2015).</div>
+                        <div> Do stejné řady patří i serverová vydání, jako například Windows 2000 Server, Windows
+                            Server 2003 či R2,
+                            Windows Server 2008 či R2, Windows Server 2012 či R2, Windows Server 2016, Windows Server
+                            2019 nebo Windows
+                            Server 2022.</div>
+                        &nbsp;
+                        <h5 id="w8">Windows 8</h5>
+                        <div>Ve verzi Windows 8 (start 26. října 2012) byla zachována plocha (Desktop), ale tlačítko
+                            Start zmizelo a
+                            bylo nahrazeno dlaždicovým prostředím Metro. Tato změna nebyla uživateli příliš přívětivě
+                            přijata, proto
+                            bylo v další verzi tlačítko Start opět vráceno.</div>
+                            <div><img src="images/win8.png" alt="" class="win1"></div>
+                        &nbsp;
+                        <h5 id="w8-1">Windows 8.1</h5>
+                        <div>Windows 8.1 je další verzí operačního systému Windows. Byl uvolněn 17. října 2013 na
+                            Windows Store jako
+                            bezplatný upgrade předchozí verze (pro dosavadní uživatele Windows 8) a 18. října všeobecně.
+                            Oproti
+                            výchozímu Windows 8 se vrátilo tlačítko Start (stejné jako u Windows 10). Bylo patrné také
+                            vylepšení grafiky
+                            a více možností využití. Zajímavostí je, že Microsoft vypsal odměnu za to, pokud někdo
+                            nalezne a opraví
+                            chyby v této verzi OS.</div>
+                        &nbsp;
+                        <h5 id="w10">Windows 10</h5>
+                        <div>Windows 10 byl na trh uveden 29. července 2015. Spojuje v sobě vlastnosti Windows 7 a
+                            Windows 8; nabízí
+                            klasickou nabídku Start (která se při ovládání prstem zvětší na celou obrazovku) i živé
+                            dlaždice. Všechny
+                            aplikace se navíc spouštějí v okně (a ne přes celou obrazovku jako ve Windows 8), pro
+                            dotykové displeje jsou
+                            však primárně maximalizované. Úplnou novinkou je tlačítko Task Bar na hlavním panelu, které
+                            zobrazuje
+                            správce virtuálních ploch.</div>
+                        &nbsp;
+                        <h5 id="w11">Windows 11</h5>
+                        <div>Windows 11 je nejnovější verzí systému Windows byla oficiálně vydána 5. října 2021. Jeho
+                            součástí je
+                            například přepracovaný vzhled s kulatými rohy, vycentrovaným hlavním panelem a přepracovanou
+                            nabídkou Start
+                            či možnost stahování aplikací určených pro systém Android.</div>
+                            <div><img src="images/win11.png" alt="" class="win1"></div>
+                            &nbsp;
+
+                        <h2 id="prikazy"> Příkazy</h2>
+                        &nbsp;
+                        <h5 id="sit-prik">Síťové příkazy</h5>
+                        <p>ping - <strong>testuje spojení se vzdáleným PC, měří dobu odezvy (latenci)</strong></p>
+                        <p>ipconfigping - <strong>konfigurace síťových adaptérů (zobrazení TCP/IP hodnot)</strong> </p>
+                        <p>ftp - <strong>jednoduchý klient pro FTP</strong></p>
+                        <p>tftp - <strong>jednoduchý klient pro TFTP</strong></p>
+                        <h5 id="procesy-a-sluzby">Procesy a služby</h5>
+                        <p>shutdown - <strong>vypnutí nebo restart počítače</strong></p>
+                        
+                        &nbsp;      
+                        &nbsp;
+                        
+                    </div>
+                    <div>
+                        <div class="blog-comments ">
+                            <h4>Komentáře</h4>
+                            <div id="comment-blog">
+                                <ul class="comment-list">
+                                    <li class="comment">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="comments-form">
+                            <h4>Zanech zde komentář !</h4>
+                            <div class="comment-form-main">
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input class="form-control" name="commenter-name" placeholder="Jméno"
+                                                    id="commenter-name" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input class="form-control" name="commenter-email" placeholder="Email"
+                                                    id="commenter-email" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <textarea class="form-control" name="commenter-message"
+                                                    placeholder="Zpráva" id="commenter-message" cols="30"
+                                                    rows="2"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 post-btn">
+                                            <button class="hover-btn-new orange"><span>Zveřejnit</span></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    &nbsp;
+
+                </div>
+                <div class="col-lg-3 col-12 right-single">
+                    <ol>
+                        <li> <a href="#his"><strong>Historie</strong></a></li>
+                        <li> <a href="#dos"><strong>Windows pro DOS</strong></a> </li>
+                        <li> <a href="#verze"><strong>Verze windows</strong></a> 
+                        <ol>
+                            <li><a href="#w1"><strong>Windows 1.0</strong></a></li>
+                            <li><a href="#w2"><strong>Windows 2.0</strong></a></li>
+                            <li><a href="#w3"><strong>Windows 3.0 a 3.1</strong></a></li>
+                            <li><a href="#w95"><strong>Windows 95</strong></a></li>
+                            <li><a href="#w98"><strong>Windows 98 a 98 SE</strong></a></li>
+                            <li><a href="#wMIL"><strong>Windows Millennium Edition</strong></a></li>
+                            <li><a href="#wNT"><strong>Windows NT</strong></a></li>
+                            <li><a href="#w8"><strong>Windows 8</strong></a></li>
+                            <li><a href="#w8-1"><strong>Windows 8.1</strong></a></li>
+                            <li><a href="#w10"><strong>Windows 10</strong></a></li>
+                            <li><a href="#w11"><strong>Windows 11</strong></a></li>
+                        </ol>
+                        </li>   
+                        <li><a href="#prikazy"><strong>Příkazy</strong></a>
+                            <ol> <li><a href="#sit-prik"><strong>Síťové příkazy</strong></a></li>
+                                 <li><a href="#procesy-a-sluzby"><strong>Procesy a služby</strong></a></li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+
+
+
+                <footer class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-xs-12">
+                                <div class="widget clearfix">
+                                    <div class="widget-title">
+                                        <h3>O mně</h3>
+                                    </div>
+                                    <p>Ahoj, jmenuju se Jan Beníšek, chodím do prváku na Střední průmyslové a umělecké
+                                        školy v opavě
+                                    </p>
+                                    <p>Moje nejoblíbenější aktivita jsou hry, u kterých trávím velkou část svého volného
+                                        času, rád
+                                        také tvořím webové stránky a doufám že těmito stránkami na někoho zapůsobím.</p>
+                                    <div class="footer-right">
+                                        <ul class="footer-links-soi">
+                                            <li><a href="https://www.facebook.com/jan.benisek4"><i
+                                                        class="fa fa-facebook"></i></a>
+                                            </li>
+                                            <li><a href="https://github.com/Benisekjan"><i class="fa fa-github"></i></a>
+                                            </li>
+                                        </ul><!-- end links -->
+                                    </div>
+                                </div><!-- end clearfix -->
+                            </div><!-- end col -->
+
+
+
+                            <div class="col-lg-4 col-md-4 col-xs-12">
+                                <div class="widget clearfix">
+                                    <div class="widget-title">
+                                        <h3 id="kontakty">Kontaktní údaje</h3>
+                                    </div>
+
+                                    <ul class="footer-links">
+                                        <li><a href="mailto:#">it2104@sspu-opava.cz</a></li>
+                                        <li>+420 733 456 180</li>
+                                    </ul><!-- end links -->
+                                </div><!-- end clearfix -->
+                            </div><!-- end col -->
+
+                        </div><!-- end row -->
+                    </div><!-- end container -->
+                </footer><!-- end footer -->
+
+                <div class="copyrights">
+                    <div class="container">
+                        <div class="footer-distributed">
+                            <div class="footer-center">
+                                <p class="footer-company-name">Všechna práva vyhrazena. &copy; 2022 <a
+                                        href="#">EdukačníWeb</a>
+                                    Design By : Jan Beníšek</p>
+                            </div>
+                        </div>
+                    </div><!-- end container -->
+                </div><!-- end copyrights -->
+
+                <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+            </div>
+        </div>
+                <!-- ALL JS FILES -->
+                <script src="js/all.js"></script>
+                <!-- ALL PLUGINS -->
+                <script src="js/custom.js"></script>
+
+</body>
+
+</html>

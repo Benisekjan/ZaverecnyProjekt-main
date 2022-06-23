@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Metas -->
+<title>Edukační Web - Jan Beníšek</title>
+<meta name="keywords" content="">
+<meta name="description" content="Edukativní blog">
+<meta name="author" content="Jan Beníšek">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/ikona.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="host_version">
+
+    <!-- Modal -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" >
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header tit-up">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Účet</h4>
+                </div>
+                <div class="modal-body customer-box">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li><a class="active" href="#Login" data-toggle="tab">Přihlášení</a></li>
+                        <li><a href="#Registration" data-toggle="tab">Registrace</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="Login">
+                            <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="email1" placeholder="Jméno" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="exampleInputPassword1" placeholder="Email"
+                                            type="email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+                                            Odeslat
+                                        </button>
+                                        <a class="for-pwd" href="javascript:;">Zapomněli jste heslo?</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="Registration">
+                            <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" placeholder="Jméno" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="email" placeholder="Email" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="mobile" placeholder="Tel. Číslo" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="password" placeholder="Heslo" type="password">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                            Uložit &amp; Pokračovat
+                                        </button>
+                                        <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                            Zrušit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="progress-br float shadow">
+                <div class="progress__item"></div>
+            </div>
+        </div>
+    </div>
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-navbar">
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="t-rex-runner-gh-pages/index.html">
+                    <img src="images/ikona.png" alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host"
+                     aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbars-host">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Hlavní stránka</a></li>
+                        <li class="nav-item"><a class="nav-link" href="HTML.html">HTML</a></li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="CSS.html" >CSS </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="C.html" >Jazyk C
+                            </a>
+
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="Linux.html">LINUX</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Windows.html">WINDOWS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Bootstrap.html">BOOTSTRAP</a></li>
+                       
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log orange" href="#" data-toggle="modal"
+                                data-target="#login"><span>Účet</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+    </header>
+    <!-- End header -->
+
+    <div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel"
+        data-pause="hover" data-interval="false">
+        <!-- Indicators -->
+
+        
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div id="home" class="first-section" style="background-image:url('images/Hlavni-stranka.jpg');">
+                    <div class="dtab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 text-right">
+                                    <div class="big-tagline">
+                                        <h2><strong>Edukační Web </strong> Jan Beníšek</h2>
+                                       
+                                        <a href="#kontakty" class="hover-btn-new"><span> Kontakt </span></a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="#kontakty" class="hover-btn-new"><span>O mně</span></a>
+                                    </div>
+                                </div>
+                            </div><!-- end row -->
+                        </div><!-- end container -->
+                    </div>
+                </div><!-- end section -->
+            </div>
+
+
+            <!-- Left Control -->
+
+        </div>
+    </div>
+
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>Co zde najdete ?</h3>
+                    <p class="lead">Na tomto webu se dozvíte všechno o HTML, CSS, Jazyku C, Windowsu, Linuxu a později
+                        také přidám Javascript, SQL, PHP a tak dále podívejte se sami ! </p>
+                </div>
+            </div><!-- end title -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <hr class="invis">
+
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="blog-item">
+                <div class="image-blog">
+                    <img src="images/HTML.png" alt="HTML" class="img-fluid">
+                </div>
+                <div class="meta-info-blog">
+                    <span><i class="fa fa-calendar"></i> <a href="#">1990</a> </span>
+                </div>
+                <div class="blog-title">
+                    <h2><a href="#" title="">HTML</a></h2>
+                </div>
+                <div class="blog-desc">
+                    <p>HTML (Hypertext Markup Languege) je název značkovacího jazyka používaného pro tvorbu webových stránek. Jeden z hlavních jazyků pro vytváření WWW, který umožňuje publikaci dokumentů na internetu.</p>
+                </div>
+                <div class="blog-button">
+                    <a class="hover-btn-new orange" href="HTML.html"> <span>Přejít na stránku</span> </a>
+                </div>
+            </div>
+        </div><!-- end col -->
+
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="blog-item">
+                <div class="image-blog">
+                    <img src="images/CSS.png" alt="CSS" class="img-fluid">
+                </div>
+                <div class="meta-info-blog">
+                    <span><i class="fa fa-calendar"></i> <a href="#">1996</a> </span>
+                </div>
+                <div class="blog-title">
+                    <h2><a href="#" title="">CSS</a></h2>
+                </div>
+                <div class="blog-desc">
+                    <p>CSS (Cascading Style Sheets) česky kaskádové styly je jazyk pro popis elementů napsaných v jazycích XTML, XHTML nebo XML</p>
+                </div>
+                <div class="blog-button">
+                    <a class="hover-btn-new orange" href="CSS.html"><span>Přejít na stránku</span></a>
+                </div>
+            </div>
+        </div><!-- end col -->
+
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="blog-item">
+                <div class="image-blog">
+                    <img src="images/JS.png" alt="" class="img-fluid">
+                </div>
+                <div class="meta-info-blog">
+                    <span><i class="fa fa-calendar"></i> <a href="#">1995</a> </span>
+                </div>
+                <div class="blog-title">
+                    <h2><a href="#" title="">JavaScript</a></h2>
+                </div>
+                <div class="blog-desc">
+                    <p>JavaScript je multiplatformní, objektivně orientovaný, událostmi řízený skriptovací jazyk. Jeho syntaxe patří do rodiny jazyků C/C++/Java</p>
+                </div>
+                <div class="blog-button">
+                    <a class="hover-btn-new orange" href="#"><span>Coming Soon</span></a>
+                </div>
+            </div>
+        </div><!-- end col -->
+    </div><!-- end row -->
+
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="blog-item">
+                <div class="image-blog">
+                    <img src="images/WIN.png" alt="" class="img-fluid">
+                </div>
+                <div class="meta-info-blog">
+                    <span><i class="fa fa-calendar"></i> <a href="#">1985</a> </span>
+                </div>
+                <div class="blog-title">
+                    <h2><a href="#" title="">Windows</a></h2>
+                </div>
+                <div class="blog-desc">
+                    <p>Microsoft Windows je označení několika operačních systémů od firmy Microsoft. Všechny mají grafické rozhraní. </p>
+                </div>
+                <div class="blog-button">
+                    <a class="hover-btn-new orange" href="Windows.html"><span>Přejít na stránku</span></a>
+                </div>
+            </div>
+        </div><!-- end col -->
+
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="blog-item">
+                <div class="image-blog">
+                    <img src="images/LIN.png" alt="" class="img-fluid">
+                </div>
+                <div class="meta-info-blog">
+                    <span><i class="fa fa-calendar"></i> <a href="#">1991</a> </span>
+                </div>
+                <div class="blog-title">
+                    <h2><a href="#" title="">Linux</a></h2>
+                </div>
+                <div class="blog-desc">
+                    <p>Linux je označení pro svobodný a otevřený počítačový operační systém, který je založen na linuxovém jádru.</p>
+                </div>
+                <div class="blog-button">
+                    <a class="hover-btn-new orange" href="Linux.html"><span>Přejít na stránku</span></a>
+                </div>
+            </div>
+        </div><!-- end col -->
+
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="blog-item">
+                <div class="image-blog">
+                    <img src="images/MAC.png" alt="" class="img-fluid">
+                </div>
+                <div class="meta-info-blog">
+                    <span><i class="fa fa-calendar"></i> <a href="#">2001</a> </span>
+                </div>
+                <div class="blog-title">
+                    <h2><a href="#" title="">MacOS</a></h2>
+                </div>
+                <div class="blog-desc">
+                    <p>MacOs je operační systém pro počítače Macintosh od firmy Apple, všchny mají grafické rozhraní.</p>
+                </div>
+                <div class="blog-button">
+                    <a class="hover-btn-new orange" href="#"><span>Coming Soon</span></a>
+                </div>
+            </div>
+        </div><!-- end col -->
+
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="blog-item">
+                <div class="image-blog">
+                    <img src="images/PHP.png" alt="" class="img-fluid">
+                </div>
+                <div class="meta-info-blog">
+                    <span><i class="fa fa-calendar"></i> <a href="#">1995</a> </span>
+                </div>
+                <div class="blog-title">
+                    <h2><a href="#" title="">PHP</a></h2>
+                </div>
+                <div class="blog-desc">
+                    <p>PHP (Hypertext Preprocessor) je skriptovací programovací jazyk je určen k programování
+                        dynamických internetových stránek </p>
+                </div>
+                <div class="blog-button">
+                    <a class="hover-btn-new orange" href="#"><span>Coming Soon</span></a>
+                </div>
+            </div>
+        </div><!-- end col -->
+
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="blog-item">
+                <div class="image-blog">
+                    <img src="images/SQL.png" alt="" class="img-fluid">
+                </div>
+                <div class="meta-info-blog">
+                    <span><i class="fa fa-calendar"></i> <a href="#">1974</a> </span>
+                </div>
+                <div class="blog-title">
+                    <h2><a href="#" title="">SQL</a></h2>
+                </div>
+                <div class="blog-desc">
+                    <p>SQL (Structured Query Language) je standardizovaný strukturovaný dotazovací jazyk, který se
+                        používá při práci s relačními databázemi.</p>
+                </div>
+                <div class="blog-button">
+                    <a class="hover-btn-new orange" href="#"><span>Coming Soon</span></a>
+                </div>
+            </div>
+        </div><!-- end col -->
+
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="blog-item">
+                <div class="image-blog">
+                    <img src="images/REACT.png" alt="" class="img-fluid">
+                </div>
+                <div class="meta-info-blog">
+                    <span><i class="fa fa-calendar"></i> <a href="#">2013</a> </span>
+                </div>
+                <div class="blog-title">
+                    <h2><a href="#" title="">REACT</a></h2>
+                </div>
+                <div class="blog-desc">
+                    <p>React.js je JavaScriptová knihovna pro tvorbu uživatrlského rozhraní. </p>
+                </div>
+                <div class="blog-button">
+                    <a class="hover-btn-new orange" href="#"><span>Coming Soon</span></a>
+                </div>
+            </div>
+        </div><!-- end col -->
+    </div><!-- end row -->
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="blog-item">
+                <div class="image-blog">
+                    <img src="images/bootstrap5.png" alt="HTML" class="img-fluid">
+                </div>
+                <div class="meta-info-blog">
+                    <span><i class="fa fa-calendar"></i> <a href="#">2021</a> </span>
+                </div>
+                <div class="blog-title">
+                    <h2><a href="#" title="">Bootstrap 5</a></h2>
+                </div>
+                <div class="blog-desc">
+                    <p>Bootstrap 5 je svobodná otevřená sada nástrojů kaskádových stylů pro tvorbu webu a webových aplikací. Obsahuje navrhářské šablony založené na HTML a CSS </p>
+                </div>
+                <div class="blog-button">
+                    <a class="hover-btn-new orange" href="Bootstrap.html"><span>Přejít na stránku</span></a>
+                </div>
+            </div>
+        </div><!-- end col -->
+
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="blog-item">
+                <div class="image-blog">
+                    <img src="images/C.png" alt="CSS" class="img-fluid">
+                </div>
+                <div class="meta-info-blog">
+                    <span><i class="fa fa-calendar"></i> <a href="#">1972 </a> </span>
+                </div>
+                <div class="blog-title">
+                    <h2><a href="#" title="">Jazyk C</a></h2>
+                </div>
+                <div class="blog-desc">
+                    <p>Jazyk C je vyšší programovací jazyk, který přesto umožňuje zapisovat programové konstrukce tak, jak je počítač skutečně zpracovává, takže výsledný kód může být velmi efektivní, a proto v minulosti nahradil nízkoúrovňový jazyk symbolických adres.  </p>
+                </div>
+                <div class="blog-button">
+                    <a class="hover-btn-new orange" href="C.html"><span>Přejít na stránku</span></a>
+                </div>
+            </div>
+        </div><!-- end col -->
+
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="blog-item">
+                <div class="image-blog">
+                    <img src="images/Python.png" alt="" class="img-fluid">
+                </div>
+                <div class="meta-info-blog">
+                    <span><i class="fa fa-calendar"></i> <a href="#">1991</a> </span>   
+                </div>
+                <div class="blog-title">
+                    <h2><a href="#" title="">Jazyk Python</a></h2>
+                </div>
+                <div class="blog-desc">
+                    <p>Jazyk Python je vysokoúrovňový programovací jazyk. Nabízí dynamickou kontrolu datových typů a podporuje různá programovací paradigmata, včetně objektově orientovaného, imperativního, procedurálního nebo funkcionálního. V roce 2018 vzrostla jeho popularita a zařadil se mezi nejoblíbenější jazyky. </p>
+                </div>
+                <div class="blog-button">
+                    <a class="hover-btn-new orange" href="#"><span>Coming Soon</span></a>
+                </div>
+            </div>
+        </div><!-- end col -->
+    </div><!-- end row -->
+   
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>O mně</h3>
+                        </div>
+                        <p>Ahoj, jmenuju se Jan Beníšek, chodím do prváku na Střední průmyslové a umělecké školy v opavě
+                        </p>
+                        <p>Moje nejoblíbenější aktivita jsou hry, u kterých trávím velkou část svého volného času, rád
+                            také tvořím webové stránky a doufám že těmito stránkami na někoho zapůsobím.</p>
+                        <div class="footer-right">
+                            <ul class="footer-links-soi">
+                                <li><a href="https://www.facebook.com/jan.benisek4"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li><a href="https://github.com/Benisekjan"><i class="fa fa-github"></i></a></li>
+                            </ul><!-- end links -->
+                        </div>
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+
+
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3 id="kontakty">Kontaktní údaje</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">it2104@sspu-opava.cz</a></li>
+                            <li>+420 733 456 180</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">
+                    <p class="footer-company-name">Všechna práva vyhrazena. &copy; 2022 <a href="#">EdukačníWeb</a>
+                        Design By : Jan Beníšek</p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/timeline.min.js"></script>
+    <script>
+        timeline(document.querySelectorAll('.timeline'), {
+            forceVerticalMode: 700,
+            mode: 'horizontal',
+            verticalStartPosition: 'left',
+            visibleItems: 4
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Metas -->
+<title>Edukační Web - Jan Beníšek</title>
+<meta name="keywords" content="">
+<meta name="description" content="Edukativní blog">
+<meta name="author" content="Jan Beníšek">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/ikona.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="host_version">
+
+    <!-- Modal -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" >
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header tit-up">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Účet</h4>
+                </div>
+                <div class="modal-body customer-box">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li><a class="active" href="#Login" data-toggle="tab">Přihlášení</a></li>
+                        <li><a href="#Registration" data-toggle="tab">Registrace</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="Login">
+                            <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="email1" placeholder="Jméno" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="exampleInputPassword1" placeholder="Email"
+                                            type="email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+                                            Odeslat
+                                        </button>
+                                        <a class="for-pwd" href="javascript:;">Zapomněli jste heslo?</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="Registration">
+                            <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" placeholder="Jméno" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="email" placeholder="Email" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="mobile" placeholder="Tel. Číslo" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="password" placeholder="Heslo" type="password">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                            Uložit &amp; Pokračovat
+                                        </button>
+                                        <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                            Zrušit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="progress-br float shadow">
+                <div class="progress__item"></div>
+            </div>
+        </div>
+    </div>
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="t-rex-runner-gh-pages/index.html">
+                    <img src="images/ikona.png" alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host"
+                     aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbars-host">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item "><a class="nav-link" href="index.html">Hlavní stránka</a></li>
+                        <li class="nav-item"><a class="nav-link" href="HTML.html">HTML</a></li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="CSS.html" >CSS </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="C.html" >Jazyk C
+                            </a>
+
+                        </li>
+                        <li class="nav-item active"><a class="nav-link" href="Linux.html">LINUX</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Windows.html">WINDOWS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Bootstrap.html">BOOTSTRAP</a></li>
+                        
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log orange" href="#" data-toggle="modal"
+                                data-target="#login"><span>Účet</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+	
+    <div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel"
+    data-pause="hover" data-interval="false">
+    <!-- Indicators -->
+
+    
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <div id="home" class="first-section" style="background-image:url('images/Hlavni-stranka.jpg');">
+                <div class="dtab">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 text-center">
+                                <div class="big-tagline">
+                                    <h2> <strong>LINUX</strong> </h2>	
+                                </div>
+                            </div>
+                        </div><!-- end row -->
+                    </div><!-- end container -->
+                </div>
+            </div><!-- end section -->
+        </div>
+        <!-- Left Control -->
+
+    </div>
+</div>
+
+<div id="overviews" class="section wb">
+    <div class="container">
+        <div class="section-title row text-center">
+            <div class="col-md-8 offset-md-2">
+                <h3>Linux</h3>
+                <p class="lead">Linux je označení pro svobodný a otevřený počítačový operační systém, který je založen na linuxovém jádru. </p>
+            </div>
+        </div><!-- end title -->
+	
+    
+        <div class="container">
+            <div class="row"> 
+                <div class="col-lg-9 blog-post-single">
+    <div class="container">
+        <h1 id="historie"> Historie</h1>
+        <div>
+            Linus Torvalds začal vyvíjet jádro Linuxu v roce 1991 jako svůj koníček. Mezi důvody pro vznik právě unixového systému patřil fakt, že Unix je systém, který upřednostňuje jednoduchost a je přednášen na univerzitách (Torvalds studoval na finské univerzitě v Helsinkách obor Informatika). Torvalds byl dále inspirován MINIXem od Andrewa Tanenbauma, který napsal svoji verzi unixového systému jako doprovodný projekt ke své výuce a knihám o operačních systémech. Na rozdíl od něj však Torvalds nevyužil svůj projekt komerčně, protože preferoval otevřený vývoj (viz open source software).
+        </div>
+        <div>
+            První verze linuxového jádra (0.01) byla na Internetu zveřejněna 17. září 1991.K Linusově překvapení byl o jeho nedokonalý systém velký zájem a záhy začal dostávat e-mailem další podněty, opravy a zdrojové kódy. Torvalds jádro dále vyvíjel a zároveň začal příspěvky ostatních do svého jádra začleňoval a upravené zdrojové kódy obratem zveřejňovat (další verze byla zveřejněna již v říjnu). Od té doby se na vývoji podílely tisíce vývojářů z celého světa. Model vývoje linuxového jádra a podobného softwaru byl později výstižně popsán v eseji Katedrála a tržiště (anglicky The Cathedral and the Bazaar) od Erica S. Raymonda.
+        </div>
+        <div>
+            Již velmi brzo předběhl Linux ve vývoji svůj vzor – MINIX. Zejména v počátcích byl při vývoji využíván Projekt GNU, který se již delší dobu zabýval myšlenkou vývoje volně dostupného unixového systému, avšak vlastní jádro operačního systému neměl. Z projektu GNU hned počátku Linux využil shell bash a další nástroje (základní unixové nástroje používané na příkazovém řádku, kompilátor GCC, později též GNU C Library a další). Sám Linux však nikdy nebyl součástí GNU, i když samotné jádro používá licenci GPLv2, která též pochází od GNU.
+        </div>
+        <div>
+            Torvalds je dodnes hlavou vývoje jádra, které je zveřejňováno na serveru kernel.org. Sám vydává nové verze, přičemž některé starší verze jsou udržovány jinými lidmi. Kromě něj na vývoji spolupracují tisíce programátorů z celého světa. Již delší dobu se dá říct, že vývoj jádra je z velké části placen firmami, jako je Red Hat, Intel, IBM a další.
+        </div>
+        &nbsp;
+        <div> <img src="images/lin-plocha.png" alt="" class="lin-display"> </div>
+        <h1 id="licence">Licence</h1>
+        <div> 
+            Distribuce lze nalézt na Internetu a lze je i volně používat, protože se skládají z open source programů. I v distribuci je ke každému programu standardně přiložena licence, která je při instalaci uložena společně s programem na pevný disk, takže si vše uživatel může ověřit (ve skutečnosti open source programy vyžadují, aby s nimi licence byla dodávána nejen u zdrojových kódů, ale i u funkční podoby). Dílo vytvořené distribuce (tj. jak je vše na distribučním médiu organizováno) také podléhá licenci, avšak typicky se je opět open source. Většina linuxových distribucí je sestavována výhradně ze svobodného software, takže je lze nejen volně používat, ale i dále šířit. Některé však mohou obsahovat nesvobodný software, takže je lze volně používat, ale je omezeno jejich šíření. Například v případě, že obsahují komerční programy (ovladače pro grafickou kartu, počítačové hry atp.). Též profesionální komerční distribuce jsou však dostupné pouze po zaplacení (například Red Hat Enterprise Linux, SUSE Linux Enterprise Server), avšak díky povaze open source k některým existují volně šiřitelné identické klony (viz např. CentOS).
+        </div>
+        &nbsp;
+        <h1 id="podil">Použitelnost a podíl na trhu</h1>
+        <div>Za své dlouhé působení Linux získal mnoho příznivců a významné místo na trhu operačních systémů. Zatím je rozšířený zejména na internetových a intranetových serverech a v oblasti vysoce výkonných výpočetních stanic (v žebříčku 500 nejvýkonnějších superpočítačů/TOP500 má podíl 100% V posledních letech se Linux pozvolna rozšiřuje i do firemní sféry a na domácí počítače, takže jeho podíl na PC dosáhl tři procenta. Přestože zvládá prakticky všechny činnosti od počítače očekávané a mezi jeho přednosti patří bezpečnost, nízká cena a flexibilita, rozšíření stále brání zejména velké množství aplikací dostupných pouze pro Microsoft Windows (zvláště počítačových her) a nejistá podpora spuštění těchto konkrétních aplikací pod Linuxem. Nutno také dodat, že v současnosti se Linux prosazuje i na poli chytrých telefonů a tabletů.</div>
+        &nbsp;
+        <h1 id="wine"> Projekt Wine</h1>
+        <div>
+            Projekt Wine dále poskytuje možnost konkrétní kompatibility se systémem Windows, která umožňuje spouštět nemodifikované aplikace systému Windows v systému Linux. Ta je podporována skupinami jako CodeWeavers, kteří vyrábí komerční verzi softwaru. Od roku 2009 společnost Google rovněž poskytla finanční prostředky na Projekt Wine.
+        </div>
+        &nbsp;
+        <h1 id="prikazy">Příkazy v gnu/linux</h1>
+        &nbsp;
+        <p>ls - <strong>výpis adresáře</strong></p>
+        <p>ls -l - <strong>podrobný výpis adresáře</strong></p>
+        <p>ls -a - <strong>výpis skrytých</strong></p>
+        <p>cd - <strong>přepínání mezi adresáři</strong></p>
+        <p>mkdir - <strong>vytvoření adresáře</strong></p>
+        <p>rmdir - <strong>smazání adresáře</strong></p>
+        <p>rm -r - <strong>smazání neprázdného adresáře</strong></p>
+        <p>pwd - <strong>aktuální umístění</strong></p>
+        <p>cp - <strong>kopírování</strong></p>
+        <p>mv - <strong>přesun</strong></p>
+        <p>less - <strong>výpis s listováním</strong></p>
+        <p>cat - <strong>výpis textového souboru</strong></p>
+        <p>nano - <strong>textový editor</strong></p>
+        <p>grep - <strong>hledání podřetězce</strong></p>
+        <p>head - <strong>výpis n prvních řádků</strong></p>
+        <p>tail - <strong>výpis n posledních řádků</strong></p>
+        <p>wc - <strong>počet řádků, slov a znaků</strong></p>
+        <p>du - <strong>velikost souboru</strong> </p>
+        <p>touch - <strong>vytvoření prázdného txt souboru </strong></p>
+        <p>awk - <strong>rozdělení textu podle oddělovače </strong></p>
+        <p>tr -  <strong>nahrazování znaků</strong></p>
+        <p>sort - <strong>seřazení</strong></p>
+        <p>nl - <strong>očislování řádků</strong></p>
+        &nbsp;
+        <p>adduser - <strong>přidání uživatele</strong></p>
+        <p>adduser [user] [group] - <strong>přidání uživatele do skupiny</strong></p>
+        <p>addgroup - <strong>přidání skupiny</strong></p>
+        <p>userdel - <strong>smazání uživatele</strong></p>
+        <p>userdel -r - <strong>smazání uživatele i s daty</strong></p>
+        <p>su - <strong>přepnutí uživatele</strong></p>
+        <p>sudo su - <strong>přepnutí na roota</strong></p>
+        &nbsp;
+        <p>/etc/passwd - <strong>soubor s uživateli</strong></p>
+        <p>/etc/group - <strong>soubor se skupinami</strong></p>
+        &nbsp;
+        <p>passwd - <strong>změna hesla</strong></p>
+        &nbsp;
+        <p>ssh [user]@[IP] - <strong>přihlášení na SSH</strong></p>
+        <p>scp [soubor] [user]@[IP]:/[lokální umístění]</p>
+        <p>scp dokument.doc jarda@192.168.10.5:/home/student/Plocha</p>
+        <p>ssh-keygen - <strong>vyrobení klíčů</strong></p>
+        <p>ssh-copy-id [user]@[IP] - <strong>zkopírování kliče</strong></p>
+        <h4 id="lxd">LXD</h4>
+        <p>apt install lxd - <strong>instalace lxd</strong></p>
+        <p>lxd init	 - <strong>inicializacni nastavení, jen jednou po instalaci </strong></p>
+        <h5>Tvorba LXD kontejnerů</h5>
+        <p>lxc launch images:[distribuce]/[verze]/[architektura] [název kontejneru]</p>
+        <p>lxc launch images:ubuntu/20.04/amd64 mujPC  - <strong>vytvoření kontejneru</strong></p>
+        <p>lxc list - <strong>výpis kontejnerů</strong> </p>
+        <p>lxc start [název kontejneru]</p>
+        <p>lxc stop [název kontejneru]</p>
+        <p>lxc restart [název kontejneru]</p>
+        <p>lxc delete [název kontejneru]</p>
+        <p>lxc info [název kontejneru]</p>
+        <p>lxc config set [název kontejneru] limits.cpu=XXX</p>
+        <p>lxc config set [název kontejneru] limits.memory=XXXMiB</p>
+        <p>lxc exec [název kontejneru] bash</p>
+        <p>lxc exec [název kontejneru]  - - apt install openssh-server</p>
+
+    </div>
+
+		
+    &nbsp;
+    &nbsp;
+
+    <div>
+        <div class="blog-comments ">
+            <h4>Komentáře</h4>
+            <div id="comment-blog">
+                <ul class="comment-list">
+                    <li class="comment">	    
+                    </li>	
+                </ul>
+            </div>
+        </div>
+        <div class="comments-form">
+            <h4>Zanech zde komentář !</h4>
+            <div class="comment-form-main">
+                <form action="#">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input class="form-control" name="commenter-name" placeholder="Jméno" id="commenter-name" type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input class="form-control" name="commenter-email" placeholder="Email" id="commenter-email" type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea class="form-control" name="commenter-message" placeholder="Zpráva" id="commenter-message" cols="30" rows="2"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12 post-btn">
+                            <button class="hover-btn-new orange"><span>Zveřejnit</span></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+        &nbsp;
+					
+                </div><!-- end col -->
+				<div class="col-lg-3 col-12 right-single">
+                    <ol>
+                        <li> <a href="#historie"><strong>Historie</strong></a> </li>
+                        <li> <a href="#licence"><strong>Licence</strong></a> </li>
+                        <li> <a href="#podil"><strong>Použitelnost a podíl na trhu</strong></a>  </li>
+                        <li> <a href="#wine"><strong>Projekt Wine</strong></a>  </li>
+                        <li> <a href="#prikazy"><strong>Příkazy v gnu/linux</strong></a>  
+                            <ol>
+                                <li> <a href="#lxd"><strong>LXD</strong></a>  </li>
+                            </ol>
+                        </li>
+                        
+                    </ol>
+				</div>
+            </div><!-- end row -->
+        
+    </div><!-- end section -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>O mně</h3>
+                        </div>
+                        <p>Ahoj, jmenuju se Jan Beníšek, chodím do prváku na Střední průmyslové a umělecké školy v opavě
+                        </p>
+                        <p>Moje nejoblíbenější aktivita jsou hry, u kterých trávím velkou část svého volného času, rád
+                            také tvořím webové stránky a doufám že těmito stránkami na někoho zapůsobím.</p>
+                        <div class="footer-right">
+                            <ul class="footer-links-soi">
+                                <li><a href="https://www.facebook.com/jan.benisek4"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li><a href="https://github.com/Benisekjan"><i class="fa fa-github"></i></a></li>
+                            </ul><!-- end links -->
+                        </div>
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+
+
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3 id="kontakty">Kontaktní údaje</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">it2104@sspu-opava.cz</a></li>
+                            <li>+420 733 456 180</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">
+                    <p class="footer-company-name">Všechna práva vyhrazena. &copy; 2022 <a href="#">EdukačníWeb</a>
+                        Design By : Jan Beníšek</p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+</div>
+</div>
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>

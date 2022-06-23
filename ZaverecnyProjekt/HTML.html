@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Metas -->
+<title>Edukační Web - Jan Beníšek</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/ikona.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="host_version">
+
+    <!-- Modal -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" >
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header tit-up">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Účet</h4>
+                </div>
+                <div class="modal-body customer-box">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li><a class="active" href="#Login" data-toggle="tab">Přihlášení</a></li>
+                        <li><a href="#Registration" data-toggle="tab">Registrace</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="Login">
+                            <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="email1" placeholder="Jméno" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="exampleInputPassword1" placeholder="Email"
+                                            type="email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+                                            Odeslat
+                                        </button>
+                                        <a class="for-pwd" href="javascript:;">Zapomněli jste heslo?</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="Registration">
+                            <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" placeholder="Jméno" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="email" placeholder="Email" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="mobile" placeholder="Tel. Číslo" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="password" placeholder="Heslo" type="password">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                            Uložit &amp; Pokračovat
+                                        </button>
+                                        <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                            Zrušit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="progress-br float shadow">
+                <div class="progress__item"></div>
+            </div>
+        </div>
+    </div>
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="t-rex-runner-gh-pages/index.html">
+                    <img src="images/ikona.png" alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host"
+                     aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbars-host">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item "><a class="nav-link" href="index.html">Hlavní stránka</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="HTML.html">HTML</a></li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="CSS.html">CSS </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="C.html">Jazyk C
+                            </a>
+
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="Linux.html">LINUX</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Windows.html">WINDOWS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Bootstrap.html">BOOTSTRAP</a></li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log orange" href="#" data-toggle="modal"
+                                data-target="#login"><span>Účet</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+
+    <div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel"
+        data-pause="hover" data-interval="false">
+        <!-- Indicators -->
+
+
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div id="home" class="first-section" style="background-image:url('images/Hlavni-stranka.jpg');">
+                    <div class="dtab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 text-center">
+                                    <div class="big-tagline">
+                                        <h2> <strong> HTML</strong> </h2>
+                                    </div>
+                                </div>
+                            </div><!-- end row -->
+                        </div><!-- end container -->
+                    </div>
+                </div><!-- end section -->
+            </div>
+            <!-- Left Control -->
+
+        </div>
+    </div>
+
+    <div id="overviews" class="section lb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>HTML</h3>
+                    <p class="lead">Hypertext Markup Language je název značkovacího jazyka používaného pro tvorbu
+                        webových stránek, které jsou propojeny hypertextovými odkazy </p>
+                </div>
+            </div><!-- end title -->
+
+            
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9 blog-post-single">
+
+                            <div class="container">
+                                <div>
+                                    <h1 id="his">Historie</h1>
+                                    &nbsp;
+                                    <div>V roce 1989 spolupracovali Tim Berners-Lee a Robert Cailliau na propojeném
+                                        informačním systému pro CERN, výzkumné centrum fyziky poblíž Ženevy ve
+                                        Švýcarsku. V té době se pro tvorbu dokumentů obvykle používaly jazyky TeX,
+                                        PostScript a také SGML. Berners-Lee si uvědomoval, že potřebují něco
+                                        jednoduššího a v roce 1990 byl tedy navržen jazyk HTML a protokol HTTP
+                                        (Hypertext Transfer Protocol – protokol pro přenos hypertextu). Zároveň také Tim
+                                        Berners-Lee napsal první webový prohlížeč, který nazval WorldWideWeb.</div>
+                                    <div>V roce 1991 CERN zprovoznil svůj web. Současně organizace NCSA (National Center
+                                        for Supercomputer Applications) vybídla Marca Andreessena a Erica Binu k
+                                        vytvoření prohlížeče Mosaic; ten vznikl v roce 1993 ve verzích pro počítače IBM
+                                        PC a Macintosh a měl obrovský úspěch. Byl to první prohlížeč s grafickým
+                                        uživatelským rozhraním.</div>
+                                    <div>Následoval rychlý rozvoj webu, takže bylo nutné pro HTML definovat standardy.
+                                    </div>
+                                </div>
+                                &nbsp;
+                                <h1>Verze HTML</h1>
+                                &nbsp;
+                                <h5 id="v1">Verze 0.9–1.2</h5>
+
+                                <div>
+                                    Byly vytvářeny postupně v letech 1991–1993. Na těchto verzích spolupracovali Tim
+                                    Berners-Lee a Daniel Connolly. Nepodporují grafické rozhraní.
+                                </div>
+                                &nbsp;
+                                <h5 id="v2">Verze 2.0</h5>
+
+                                <div>Byla vydána v listopadu 1995 komunitou IETF a zachycovala stav jazyka k červnu
+                                    1994. Je to první verze, která zcela odpovídá syntaxi SGML. Přidává k původní
+                                    specifikaci interaktivní formuláře a podporu grafiky.</div>
+                                &nbsp;
+                                <h5 id="v3">Verze 3.2</h5>
+
+                                <div> Byla vydána 14. ledna 1997 komunitou W3C a zachycovala stav jazyka k počátku roku
+                                    1996. Tato verze přidává k jazyku tabulky, zarovnávání textu a stylové prvky pro
+                                    ovlivňování vzhledu. Původně připravovaná verze HTML 3.0 nebyla nikdy přijata jako
+                                    standard, protože byla příliš složitá a žádná firma nebyla schopna naprogramovat
+                                    její podporu.</div>
+                                &nbsp;
+                                <h5 id="v4">Verze 4.0</h5>
+
+                                <div>Byla vydána 18. prosince 1997 komunitou W3C. Do specifikace jazyka přibyly nové
+                                    prvky pro tvorbu tabulek, formulářů a nově byly standardizovány rámy (frames). Tato
+                                    verze se snaží dosáhnout původního účelu – prvky by měly vyznačovat význam
+                                    (sémantiku) jednotlivých částí dokumentu, vzhled je ovlivňován připojovanými styly.
+                                    Některé prezentační prvky byly zavrženy.</div>
+                                &nbsp;
+                                <h5 id="v5">Verze 4.01</h5>
+
+                                <div>Byla vydána 24. prosince 1999 komunitou W3C. Tato verze opravuje některé chyby
+                                    verze předchozí. Podle původního předpokladu se mělo jednat o poslední verzi, po
+                                    které by se přešlo na XHTML – následníkovi HTML, využívajícímu univerzální jazyk
+                                    XML.</div>
+                                &nbsp;
+                                <h5 id="v6">Verze 5.0</h5>
+
+                                <div>Po patnáctileté odmlce byla vydána nová verze. Ta již ukončuje závislost HTML na
+                                    SGML opravuje mnoho chyb předešlé verze, vyřazuje mnoho zastaralých a již
+                                    nepoužívaných prvků a přidává nové sémantické prvky. Zároveň přidává podporu mnohých
+                                    nových a moderních technologií a zavádí nový systém vývoje jazyka.</div>
+                                &nbsp;
+                                <div>
+                                    <h2 id="znacky">Značky</h2>
+                                    &nbsp;
+                                    <p>a - <strong>Definuje hyperlink</strong></p>
+                                    <p>abbr - <strong>Definuje zkratku nebo akronym</strong> </p>
+                                    <p>article - <strong>Definuje odstavec</strong></p>
+                                    <p>aside - <strong>Definuje kontent strannou od kontentu stránky</strong> </p>
+                                    <p>b - <strong>Definuje tučný text</strong> </p>
+                                    <p>blockquote - <strong>Definuje část, která je citována z jiného zdroje</strong>
+                                    </p>
+                                    <p>body - <strong>Definuje tělo dokumentu</strong></p>
+                                    <p>br - <strong>Definuje jednořádkový text</strong></p>
+                                    <p>button - <strong>Definuje tlačítko na, které lze kliknout</strong></p>
+                                    <p>div - <strong>Definuje sekci v dokumetu</strong></p>
+                                    <p>em - <strong>Definuje zvýrazněný text</strong></p>
+                                    <p>figcaption - <strong>Definuje popisek pro prvek figure </strong></p>
+                                    <p>figure - <strong>Určuje samostatný obsah</strong></p>
+                                    <p>footer - <strong>Definuje zápatí textu</strong></p>
+                                    <p>head - <strong>Obsahuje metadata/informace o dokumentu</strong></p>
+                                    <p>header - <strong>Definuje záhlaví pro dokument nebo oddíl</strong></p>
+                                    <p>html - <strong>Definuje strukturu dokumentu HTML</strong></p>
+                                    <p>h1-h6 - <strong>Definuje HTML nadpisy</strong></p>
+                                    <p>img - <strong>Definuje obrázek</strong></p>
+                                    <p>input - <strong>Definuje ovládací prvek vstupu</strong></p>
+                                    <p>label - <strong>Definuje popisek pro prvek input</strong></p>
+                                    <p>li - <strong>Definuje položku seznamu</strong></p>
+                                    <p>link - <strong>Definuje vztah mezi dokumentem a externím zdrojem (nejčastěji
+                                            používaným k propojení se styly)</strong></p>
+                                    <p>main - <strong>Určuje hlavní obsah dokumentu</strong></p>
+                                    <p>mark - <strong>Definuje označený/zvýrazněný text</strong></p>
+                                    <p>nav - <strong>Definuje navigační odkazy</strong></p>
+                                    <p>ol - <strong>Definuje uspořádaný seznam</strong></p>
+                                    <p>p - <strong>Definuje odstavec</strong></p>
+                                    <p>picture - <strong>Definuje kontejner pro více zdrojů obrázků</strong></p>
+                                    <p>section - <strong>Definuje sekci v dokumentu</strong></p>
+                                    <p>strong - <strong>Definuje důležitý text</strong></p>
+                                    <p>style - <strong>Definuje informace o stylu dokumentu</strong></p>
+                                    <p>sub - <strong>Definuje text v dolním indexu</strong></p>
+                                    <p>sup - <strong>Definuje text v horním indexu</strong></p>
+                                    <p>table - <strong>Definuje tabulku</strong></p>
+                                    <p>th - <strong>Definuje buňku záhlaví v tabulce</strong></p>
+                                    <p>tr - <strong>Definuje řádek v tabulce</strong></p>
+                                    <p>td - <strong>Definuje buňku v tabulce</strong></p>
+                                    <p>ul - <strong>Definuje neuspořádaný seznam</strong></p>
+                                    <p>var - <strong>Definuje proměnnou</strong></p>
+
+
+
+                                </div><!-- end messagebox -->
+
+                            </div><!-- end container -->
+
+                            
+                            <div >
+                                <div class="blog-comments ">
+                                    <h4>Komentáře</h4>
+                                    <div id="comment-blog">
+                                        <ul class="comment-list">
+                                            <li class="comment">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="comments-form">
+                                    <h4>Zanech zde komentář !</h4>
+                                    <div class="comment-form-main">
+                                        <form action="#">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <input class="form-control"
+                                                            name="commenter-name" placeholder="Jméno"
+                                                            id="commenter-name" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <input class="form-control"
+                                                            name="commenter-email" placeholder="Email"
+                                                            id="commenter-email" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control"
+                                                            name="commenter-message"
+                                                            placeholder="Zpráva" id="commenter-message"
+                                                            cols="30" rows="2"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 post-btn">
+                                                    <button
+                                                        class="hover-btn-new orange"><span>Zveřejnit</span></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            &nbsp;
+
+
+                        </div>
+                        <div class="col-lg-3 col-12 right-single">
+                            <ol>
+                                <li> <a href="#his"><strong>Historie</strong></a></li>
+                                <li> <a href="#v1"><strong>Verze 0.9–1.2</strong></a> </li>
+                                <li> <a href="#v2"><strong>Verze 2.0</strong></a> </li>
+                                <li> <a href="#v3"><strong>Verze 3.2</strong></a> </li>
+                                <li> <a href="#v4"><strong>Verze 4.0</strong></a> </li>
+                                <li> <a href="#v5"><strong>Verze 4.01</strong></a> </li>
+                                <li> <a href="#v6"><strong>Verze 5.0</strong></a> </li>
+                                <li> <a href="#znacky"><strong>Značky</strong></a> </li>
+                            </ol>
+                        </div>
+        </div>   
+    </div>  
+      
+                        <footer class="footer">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-xs-12">
+                                        <div class="widget clearfix">
+                                            <div class="widget-title">
+                                                <h3>O mně</h3>
+                                            </div>
+                                            <p>Ahoj, jmenuju se Jan Beníšek, chodím do prváku na Střední průmyslové a
+                                                umělecké školy
+                                                v opavě
+                                            </p>
+                                            <p>Moje nejoblíbenější aktivita jsou hry, u kterých trávím velkou část svého
+                                                volného
+                                                času, rád
+                                                také tvořím webové stránky a doufám že těmito stránkami na někoho
+                                                zapůsobím.</p>
+                                            <div class="footer-right">
+                                                <ul class="footer-links-soi">
+                                                    <li><a href="https://www.facebook.com/jan.benisek4"><i
+                                                                class="fa fa-facebook"></i></a>
+                                                    </li>
+                                                    <li><a href="https://github.com/Benisekjan"><i
+                                                                class="fa fa-github"></i></a>
+                                                    </li>
+                                                </ul><!-- end links -->
+                                            </div>
+                                        </div><!-- end clearfix -->
+                                    </div><!-- end col -->
+
+
+
+                                    <div class="col-lg-4 col-md-4 col-xs-12">
+                                        <div class="widget clearfix">
+                                            <div class="widget-title">
+                                                <h3 id="kontakty">Kontaktní údaje</h3>
+                                            </div>
+
+                                            <ul class="footer-links">
+                                                <li><a href="mailto:#">it2104@sspu-opava.cz</a></li>
+                                                <li>+420 733 456 180</li>
+                                            </ul><!-- end links -->
+                                        </div><!-- end clearfix -->
+                                    </div><!-- end col -->
+
+                                </div><!-- end row -->
+                            </div><!-- end container -->
+                        </footer><!-- end footer -->
+
+                        <div class="copyrights">
+                            <div class="container">
+                                <div class="footer-distributed">
+                                    <div class="footer-center">
+                                        <p class="footer-company-name">Všechna práva vyhrazena. &copy; 2022 <a
+                                                href="#">EdukačníWeb</a>
+                                            Design By : Jan Beníšek</p>
+                                    </div>
+                                </div>
+                            </div><!-- end container -->
+                        </div><!-- end copyrights -->
+                    </div> 
+                </div>
+                        <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+                        <!-- ALL JS FILES -->
+                        <script src="js/all.js"></script>
+                        <!-- ALL PLUGINS -->
+                        <script src="js/custom.js"></script>
+
+
+                    </body>
+
+</html>

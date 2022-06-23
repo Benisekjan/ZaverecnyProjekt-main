@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Metas -->
+<title>Edukační Web - Jan Beníšek</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/ikona.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="host_version">
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" >
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header tit-up">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Účet</h4>
+				</div>
+				<div class="modal-body customer-box">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs">
+						<li><a class="active" href="#Login" data-toggle="tab">Přihlášení</a></li>
+						<li><a href="#Registration" data-toggle="tab">Registrace</a></li>
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div class="tab-pane active" id="Login">
+							<form role="form" class="form-horizontal">
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" id="email1" placeholder="Jméno" type="text">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" id="exampleInputPassword1" placeholder="Email"
+											type="email">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-10">
+										<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+											Odeslat
+										</button>
+										<a class="for-pwd" href="javascript:;">Zapomněli jste heslo?</a>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="tab-pane" id="Registration">
+							<form role="form" class="form-horizontal">
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" placeholder="Jméno" type="text">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" id="email" placeholder="Email" type="email">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" id="mobile" placeholder="Tel. Číslo" type="email">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" id="password" placeholder="Heslo" type="password">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-10">
+										<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+											Uložit &amp; Pokračovat
+										</button>
+										<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+											Zrušit</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->
+
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="t-rex-runner-gh-pages/index.html">
+					<img src="images/ikona.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host"
+					 aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item "><a class="nav-link" href="index.html">Hlavní stránka</a></li>
+						<li class="nav-item"><a class="nav-link" href="HTML.html">HTML</a></li>
+						<li class="nav-item ">
+							<a class="nav-link " href="CSS.html">CSS </a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link " href="C.html">Jazyk C
+							</a>
+
+						</li>
+						<li class="nav-item"><a class="nav-link" href="Linux.html">LINUX</a></li>
+						<li class="nav-item"><a class="nav-link" href="Windows.html">WINDOWS</a></li>
+						<li class="nav-item"><a class="nav-link" href="Bootstrap.html">BOOTSTRAP</a></li>
+
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a class="hover-btn-new log orange" href="#" data-toggle="modal"
+								data-target="#login"><span>Účet</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel"
+		data-pause="hover" data-interval="false">
+		<!-- Indicators -->
+
+
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active">
+				<div id="home" class="first-section" style="background-image:url('images/Hlavni-stranka.jpg');">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-center">
+									<div class="big-tagline">
+										<h2> <strong>Jazyk C</strong> </h2>
+									</div>
+								</div>
+							</div><!-- end row -->
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<!-- Left Control -->
+
+		</div>
+	</div>
+
+	<div id="overviews" class="section wb">
+		<div class="container">
+			<div class="section-title row text-center">
+				<div class="col-md-8 offset-md-2">
+					<h3>Jazyk C</h3>
+					<p class="lead">Jazyk C je vyšší programovací jazyk, který přesto umožňuje zapisovat programové
+						konstrukce tak, jak je počítač skutečně zpracovává, takže výsledný kód může být velmi efektivní,
+						a proto v minulosti nahradil nízkoúrovňový jazyk symbolických adres. </p>
+				</div>
+			</div><!-- end title -->
+			
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-9 blog-post-single">
+
+							<div class="container">
+
+								<h2 id="his"> <strong>Historie</strong></h2>
+
+								<div>Vývoj jazyka C začal v Bellových laboratořích AT&T mezi léty 1969 a 1973. Ritchie
+									tvrdí, že nejpřínosnější období bylo v roce 1972. Pojmenování „C“ zvolili, protože
+									mnoho vlastností přebírali ze staršího jazyka zvaného „B“, jehož název byl zase
+									odvozen od jazyka BCPL (ale to není jisté, neboť Thompson také vytvořil jazyk Bon na
+									poctu své ženy Bonnie).</div>
+								<div>V roce 1973 se stal jazyk C dostatečně stabilním. Většina zdrojového kódu jádra
+									Unixu, původně napsaného v assembleru PDP-11, byla přepsána do C. Unix tedy patří
+									mezi první operační systémy, které byly napsané v jiném než strojovém jazyce či
+									assembleru. Předchozí byl například systém Multics (napsaný v PL/I) a TRIPOS
+									(napsaný v BCPL).</div>
+								&nbsp;
+								<h3 id="c99"><strong>C99</strong></h3>
+								<div>Po standardizaci jazyka v roce 1989 se většina vývoje soustředila na jazyk C++.
+									Přesto však na konci 90. let došlo k vydání dokumentu ISO 9899:1999 (obvykle
+									nazývaný C99), který byl následně v březnu 2000 přijat i jako ANSI standard.</div>
+								<div>C99 představil několik nových vlastností, které byly mnohdy v překladačích už
+									implementovány jako rozšíření:</div>
+								<ul>
+									<li>Inline funkce</li>
+									<li>Proměnné mohou být deklarovány kdekoli (jako v C++), v C89 mohly být deklarovány
+										pouze na začátku bloku</li>
+									<li>Několik nových datových typů, včetně long long int (nejméně 64bitový integer),
+										bool (logický ano/ne typ) nebo typ complex určený na reprezentaci komplexních
+										čísel.</li>
+									<li>Pole s nekonstantní velikostí</li>
+									<li>Podpora pro zakomentování jednoho řádku //, tak jako v jazycích C++ nebo BCPL
+									</li>
+									<li>Nové knihovní funkce, hlavně ve formě náhrady za funkce náchylné na přetečení na
+										zásobníku, např. snprintf()</li>
+									<li>Nové hlavičkové soubory, např. stdint.h</li>
+									<li>Variadická makra (makra C preprocesoru s proměnným počtem argumentů)</li>
+									<li>Klíčové slovo restrict, které v deklaraci ukazatele specifikuje, že na paměť
+										odkazovanou tímto ukazatelem nepřistupuje žádný jiný ukazatel (např. int*
+										restrict foo;), díky čemuž překladač může produkovat optimalizovanější kód;
+										zajištění, aby tomu skutečně tak bylo, je na programátorovi (při nedodržení je
+										chování programu nedefinované)</li>
+								</ul>
+								<h4 id="dat"><strong>Datové typy</strong></h4>
+
+								&nbsp;
+
+								<h5><u>char</u></h5>
+								<div>Velikost : 1 byte(8 bitů)</div>
+								<div>Rozsah char -128 až 127 <strong>%c</strong></div>
+								<div>Rozsah unsignetchar 0 až 255 <strong>%c</strong></div>
+								<div>Užití : Můžeme použít při uložení kláves do proměnné například : </div>
+								<div>char klavesa;</div>
+								<div> printf("Pro pokračování stiskněte klávesu 'Z' ");</div>
+								<div>scanf("%c",klavesa);</div>
+
+								&nbsp;
+
+								<h5><u>int</u></h5>
+								<div>Velikost : 2 - 4 byte(16 - 32 bitů) </div>
+								<div>Rozsah int -32 768 až 32 767 <strong>%d</strong></div>
+								<div>Rozsah unsignetint 0 sž 65 535 <strong>%u</strong></div>
+								<div>Užití : Pro uložení celých čísel.</div>
+
+								&nbsp;
+
+								<h5><u>float</u></h5>
+								<div>velikost : 4 byty(32 bitů)</div>
+								<div><strong>%f</strong></div>
+								<div>Užití : Pro uložení desetínných čísel. </div>
+
+								&nbsp;
+
+								<h5><u>double</u></h5>
+								<div>velikost : 8 byty(64 bitů)</div>
+								<div><strong>%lf</strong></div>
+
+								&nbsp;
+
+
+
+								<h5><u>long</u></h5>
+								<p>velikost : 4 byty(32 bitů)</p>
+
+								&nbsp;
+								&nbsp;
+
+								<h4 id="syn"><strong>Syntaxe</strong></h4>
+								 
+								<pre>
+
+	#include <strong>Základní knihovna jazyka C</strong>
+									
+	int main() {                        <strong>Základní funkce ohraničená složenými závorkami</strong> 
+		printf("Hello World!");     <strong>Funkce, která slouží k výpisu na obrazovku</strong> 
+		return 0;                   <strong>Zakončení funkce</strong>
+	} 
+								</pre>
+
+							<h4 id="prom"><strong>Proměnné</strong></h4>
+							<p> int celeCis = 34;</p>
+							<p> float desCis = 10.12;</p>
+							<p> char klavesa = 'Z';</p>
+
+							<h4 id="con"><strong>Constanty</strong></h4>
+							<p>const int minutesPerHour = 60;</p>
+							<p>const float PI = 3.14;</p>
+							<p>const int BIRTHYEAR = 1980;</p>
+
+							&nbsp;
+
+							<h4 id="op"><strong>Operátory</strong></h4>
+							<table class="center">
+								<tr>
+									<th> Operátor </th>
+									<th> Název </th>
+									<th> Příklad </th>
+								</tr>
+								<tr>
+									<td> + </td>
+									<td> Sčítání </td>
+									<td> x + y </td>
+								</tr>
+								<tr>
+									<td>-</td>
+									<td>Odčítání</td>
+									<td> x - y</td>
+								</tr>
+								<tr>
+									<td>*</td>
+									<td>Krát</td>
+									<td>x * y</td>
+								</tr>
+								<tr>
+									<td>/</td>
+									<td>Děleno</td>
+									<td>x / y</td>
+								</tr>
+								<tr>
+									<td>%</td>
+									<td>Zbytek po dělení</td>
+									<td>x % y</td>
+								</tr>
+								<tr>
+									<td>++</td>
+									<td>Zvedne hodnotu o 1</td>
+									<td>x++</td>
+								</tr>
+								<tr>
+									<td>--</td>
+									<td>Sníží hodnotu o 1</td>
+									<td>--x</td>
+								</tr>
+							</table>
+
+							&nbsp;
+
+							<h5 id="por"><strong>Porovnávání</strong></h5>
+							<table>
+								<tr>
+									<th>Operátor</th>
+									<th>Název</th>
+									<th>Příklad</th>
+								</tr>
+								<tr>
+									<td>==</td>
+									<td>Rovná se</td>
+									<td> x == y</td>
+								</tr>
+								<tr>
+									<td>!=</td>
+									<td>Nerovná se</td>
+									<td> y != x</td>
+								</tr>
+								<tr>
+									<td> > </td>
+									<td>Větší než</td>
+									<td> x > y </td>
+								</tr>
+								<tr>
+									<td> &lt; </td>
+									<td>Menší než</td>
+									<td> x &lt; y </td>
+								</tr>
+								<tr>
+									<td> >= </td>
+									<td>Větší nebo rovno</td>
+									<td> x >= y</td>
+								</tr>
+								<tr>
+									<td>
+										&lt;= </td>
+									<td>Menší než nebo rovno</td>
+									<td> x &lt;= y</td>
+								</tr>
+							</table>
+
+							&nbsp;
+
+							<h5 id="log-op"><strong>Logické operátory</strong></h5>
+							<table>
+								<tr>
+									<th>Operátor</th>
+									<th>Název</th>
+									<th>Popisek</th>
+									<th>Příklad</th>
+								</tr>
+								<tr>
+									<td>&&</td>
+									<td>"A"</td>
+									<td>Vrátí "pravda" hodnotu pokud jsou oba výroky pravdivé</td>
+									<td> x &lt; 5 && x &lt; 10 </td>
+								</tr>
+								<tr>
+									<td>||</td>
+									<td>"Nebo"</td>
+									<td>Vrátí "pravda" pokud je jeden výrok pravdivý</td>
+									<td> x &lt; 5 || x &lt; 4 </td>
+								</tr>
+							</table>
+
+							&nbsp;
+							&nbsp;
+
+							<h4 id="podm"><strong>Podmínky</strong></h4>
+							<p>if - Pokud podmínka neplatí vykoná se podmínka ve funkci else</p>
+							<p>else if - Je použita po podmínce if kdy je znovu vyhodnocena podmínka </p>
+							<p>else - náskeduje po if nebo také else if a slouží k provedení bloku kodu pokud je
+								podmínka nepravdivá</p>
+							<p>switch - Pužívá se, když má být provedeno více bloků kodu</p>
+
+							&nbsp;
+
+							<h4 id="loop"><strong>Loopy</strong></h4>
+							&nbsp;
+							<h5>do/while</h5>
+							<p>"Dělej dokud"</p>
+							<p>např. přičítej číslo dokud nebude větší než 5</p>
+								<pre>
+
+	int i = 0;
+
+	do {
+		printf("%d\n", i);
+		i++;
+	} while (i &lt; 5);
+
+								</pre>
+
+									&nbsp;
+
+									<h5>for</h5>
+									<p>používá se pokud víme přesně kolikrát chceme loop opakovat</p>
+									<p>příkaz je rozdělen do 3 částí </p>
+
+									<pre>
+
+	for (statement 1; statement 2; statement 3) {
+		//blok kodu, který má být proveden
+	}
+
+									</pre>
+
+									&nbsp;
+									<p>příklad vypíše čísla od 0 do 4</p>
+									<pre>
+
+	int i;
+
+	for (i = 0; i &lt; 5; i++) {
+		printf("%d\n", i);
+	}
+									</pre>
+
+											
+
+											<h4 id="fun"><strong>Funkce</strong></h4>
+											<p>//main() je funkcí</p>
+											<pre>
+
+	int main(){ 
+		printf("Hello World!");
+		return 0;
+	}
+
+											</pre>
+											
+											<p><u>Novou funkci píšeme vždy před main funkci.</u></p>
+											<pre>
+	void mojeFunkce(){
+		//blok kodu
+	}
+											</pre>
+											<p>void - návratová hodnota</p>
+											<p>mojeFunkce - název funkce</p>
+											<p>() - kulatá závorka do ní umístíme parametry např (int z,int y)</p>
+											<p> blok kodu uzavřeme do hranatých závorek {}</p>
+
+											&nbsp;
+
+											<h5>Vyvolání funkce</h5>
+											<pre>
+	void mojeFunkce(){
+		printf("Hello World");
+	}
+
+											</pre>
+											
+											<pre>
+
+	int main() { 
+		mojeFunkce(); // vyvolá funkci
+		return 0;
+	}
+												
+											</pre>
+											<p>výstup bude "Hello World"</p>
+
+
+
+
+
+											<div >
+												<div class="blog-comments ">
+													<h4>Komentáře</h4>
+													<div id="comment-blog">
+														<ul class="comment-list">
+															<li class="comment">
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="comments-form">
+													<h4>Zanech zde komentář !</h4>
+													<div class="comment-form-main">
+														<form action="#">
+															<div class="row">
+																<div class="col-md-4">
+																	<div class="form-group">
+																		<input class="form-control"
+																			name="commenter-name" placeholder="Jméno"
+																			id="commenter-name" type="text">
+																	</div>
+																</div>
+																<div class="col-md-4">
+																	<div class="form-group">
+																		<input class="form-control"
+																			name="commenter-email" placeholder="Email"
+																			id="commenter-email" type="text">
+																	</div>
+																</div>
+																<div class="col-md-12">
+																	<div class="form-group">
+																		<textarea class="form-control"
+																			name="commenter-message"
+																			placeholder="Zpráva" id="commenter-message"
+																			cols="30" rows="2"></textarea>
+																	</div>
+																</div>
+																<div class="col-md-12 post-btn">
+																	<button
+																		class="hover-btn-new orange"><span>Zveřejnit</span></button>
+																</div>
+															</div>
+														</form>
+													</div>
+												</div>
+											</div>
+											&nbsp;
+									</div><!-- end col -->
+								</div>
+									<div class="col-lg-3 col-12 right-single">
+										<ol>
+											<li> <a href="#his"><strong>Historie</strong></a></li>
+											<li> <a href="#c99"><strong>C99</strong></a> </li>
+											<li> <a href="#dat"><strong>Datové typy</strong></a> </li>
+											<li> <a href="#syn"><strong>Syntaxe</strong></a> </li>
+											<li> <a href="#prom"><strong>Proměnné</strong></a> </li>
+											<li> <a href="#con"><strong>Constanty</strong></a> </li>
+											<li> <a href="#op"><strong>Operátory</strong></a> </li>
+											<li> <a href="#por"><strong>Porovnávání</strong></a> </li>
+											<li> <a href="#log-op"><strong>Logické operátory</strong></a> </li>
+											<li> <a href="#podm"><strong>Podmínky</strong></a> </li>
+											<li> <a href="#loop"><strong>Loopy</strong></a> </li>
+											<li> <a href="#fun"><strong>Funkce</strong></a> </li>
+										</ol>
+									</div>
+								</div> 
+							</div>
+									<footer class="footer">
+										<div class="container">
+											<div class="row">
+												<div class="col-lg-4 col-md-4 col-xs-12">
+													<div class="widget clearfix">
+														<div class="widget-title">
+															<h3>O mně</h3>
+														</div>
+														<p>Ahoj, jmenuju se Jan Beníšek, chodím do prváku na Střední
+															průmyslové a umělecké školy v opavě
+														</p>
+														<p>Moje nejoblíbenější aktivita jsou hry, u kterých trávím
+															velkou část svého volného času, rád
+															také tvořím webové stránky a doufám že těmito stránkami na
+															někoho zapůsobím.</p>
+														<div class="footer-right">
+															<ul class="footer-links-soi">
+																<li><a href="https://www.facebook.com/jan.benisek4"><i
+																			class="fa fa-facebook"></i></a>
+																</li>
+																<li><a href="https://github.com/Benisekjan"><i
+																			class="fa fa-github"></i></a></li>
+															</ul><!-- end links -->
+														</div>
+													</div><!-- end clearfix -->
+												</div><!-- end col -->
+
+
+
+												<div class="col-lg-4 col-md-4 col-xs-12">
+													<div class="widget clearfix">
+														<div class="widget-title">
+															<h3 id="kontakty">Kontaktní údaje</h3>
+														</div>
+
+														<ul class="footer-links">
+															<li><a href="mailto:#">it2104@sspu-opava.cz</a></li>
+															<li>+420 733 456 180</li>
+														</ul><!-- end links -->
+													</div><!-- end clearfix -->
+												</div><!-- end col -->
+
+											</div><!-- end row -->
+										</div><!-- end container -->
+									</footer><!-- end footer -->
+
+									<div class="copyrights">
+										<div class="container">
+											<div class="footer-distributed">
+												<div class="footer-center">
+													<p class="footer-company-name">Všechna práva vyhrazena. &copy; 2022
+														<a href="#">EdukačníWeb</a>
+														Design By : Jan Beníšek</p>
+												</div>
+											</div>
+										</div><!-- end container -->
+									</div><!-- end copyrights -->
+								</div> 
+							</div>
+									<a href="#" id="scroll-to-top" class="dmtop global-radius"><i
+											class="fa fa-angle-up"></i></a>
+									
+									<!-- ALL JS FILES -->
+									<script src="js/all.js"></script>
+									<!-- ALL PLUGINS -->
+									<script src="js/custom.js"></script>
+
+</body>
+
+</html>

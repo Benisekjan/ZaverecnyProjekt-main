@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Metas -->
+<title>Edukační Web - Jan Beníšek</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/ikona.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="host_version">
+
+    <!-- Modal -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header tit-up">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Účet</h4>
+                </div>
+                <div class="modal-body customer-box">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li><a class="active" href="#Login" data-toggle="tab">Přihlášení</a></li>
+                        <li><a href="#Registration" data-toggle="tab">Registrace</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="Login">
+                            <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="email1" placeholder="Jméno" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="exampleInputPassword1" placeholder="Email"
+                                            type="email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+                                            Odeslat
+                                        </button>
+                                        <a class="for-pwd" href="javascript:;">Zapomněli jste heslo?</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="Registration">
+                            <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" placeholder="Jméno" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="email" placeholder="Email" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="mobile" placeholder="Tel. Číslo" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="password" placeholder="Heslo" type="password">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                            Uložit &amp; Pokračovat
+                                        </button>
+                                        <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                            Zrušit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="progress-br float shadow">
+                <div class="progress__item"></div>
+            </div>
+        </div>
+    </div>
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="t-rex-runner-gh-pages/index.html">
+                    <img src="images/ikona.png" alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host"
+                    aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbars-host">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item "><a class="nav-link" href="index.html">Hlavní stránka</a></li>
+                        <li class="nav-item"><a class="nav-link" href="HTML.html">HTML</a></li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="CSS.html">CSS </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="C.html">Jazyk C
+                            </a>
+
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="Linux.html">LINUX</a></li>
+                        <li class="nav-item "><a class="nav-link" href="Windows.html">WINDOWS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Bootstrap.html">BOOTSTRAP</a></li>
+                        <li class="nav-item active "><a class="nav-link" href="sql.html">SQL</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log orange" href="#" data-toggle="modal"
+                                data-target="#login"><span>Účet</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- End header -->
+
+    <div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel"
+        data-pause="hover" data-interval="false">
+        <!-- Indicators -->
+
+
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div id="home" class="first-section" style="background-image:url('images/Hlavni-stranka.jpg');">
+                    <div class="dtab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 text-center">
+                                    <div class="big-tagline">
+                                        <h2> <strong>SQL</strong> </h2>
+                                    </div>
+                                </div>
+                            </div><!-- end row -->
+                        </div><!-- end container -->
+                    </div>
+                </div><!-- end section -->
+            </div>
+            <!-- Left Control -->
+
+        </div>
+    </div>
+
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>SQL</h3>
+                    <p class="lead">SQL (anglicky Structured Query Language) je zkratka pro standardizovaný strukturovaný dotazovací jazyk, který je 
+                        používán pro práci s daty v relačních databázích. SQL je nástupcem jazyka SEQUEL (anglicky Structured English Query Language). </p>
+                </div>
+            </div><!-- end title -->
+        </div><!-- end carousel -->
+    </div><!-- end col -->
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 blog-post-single">
+                    <div class="container">
+                        <h2 id="his">Historie</h2>
+                        &nbsp;
+                        <div>
+                            V 70. letech 20. století probíhal ve firmě IBM výzkum relačních databází. Bylo nutné vytvořit sadu příkazů pro ovládání těchto databází. Vznikl tak jazyk SEQUEL (Structured English Query Language). Cílem bylo vytvořit jazyk, ve kterém by se příkazy tvořily syntakticky co nejblíže přirozenému jazyku (angličtině).
+                        </div>
+                        <div>
+                            K vývoji jazyka se přidaly další firmy. V r. 1979 uvedla na trh firma Relational Software, Inc. (dnešní Oracle Corporation) svoji relační databázovou platformu Oracle Database. IBM uvedla v roce 1981 nový systém SQL/DS a v roce 1983 systém DB2. Dalšími systémy byly např. Progress, Informix a SyBase. Ve všech těchto systémech se používala varianta jazyka SEQUEL, který byl přejmenován na SQL.
+                        </div>
+                        <div>
+                            Relační databáze byly stále významnější, a bylo nutné jejich jazyk standardizovat. Americký institut ANSI původně chtěl vydat jako standard zcela nový jazyk RDL. SQL se však prosadil jako de facto standard a ANSI založil nový standard na tomto jazyku. Tento standard bývá označován jako SQL-86 podle roku, kdy byl přijat.
+                        </div>
+                        <div>
+                            V dalších letech se ukázalo, že SQL-86 obsahuje některé nedostatky a naopak v něm nejsou obsaženy některé důležité prvky týkající se hlavně integrity databáze. V roce 1992 byl proto přijat nový standard SQL-92 (někdy se uvádí jen SQL2). Zatím nejnovějším standardem je SQL3 (SQL-99), který reaguje na potřeby nejmodernějších databází s objektovými prvky.
+                        </div>
+                        <div>
+                            Standardy podporuje prakticky každá relační databáze, ale obvykle nejsou implementovány vždy všechny požadavky normy. A naopak, každá z nich obsahuje prvky a konstrukce, které nejsou ve standardech obsaženy. Přenositelnost SQL dotazů mezi jednotlivými databázemi je proto omezená.
+                        </div>
+                        &nbsp;
+                        <h2 id="jaz"> Popis jazyka</h2>
+                        <div>
+                            <ul>
+                                <li> <strong>data definition language (DDL)</strong> , příkazy pro definici dat (CREATE, ALTER, DROP, …)</li>
+                                <li> <strong>data manipulation language (DML)</strong> , příkazy pro manipulaci s daty (SELECT, INSERT, UPDATE, DELETE, …)</li>
+                                <li> <strong>data control language (DCL)</strong>
+                                    <ul>
+                                        <li>transaction control commands (TCC), příkazy pro řízení transakcí (START TRANSACTION, COMMIT, ROLLBACK)</li>
+                                        <li>příkazy pro řízení přístupových práv (GRANT, REVOKE)</li>
+                                    </ul>
+                                </li>
+                                <li>ostatní nebo speciální příkazy (číslovače, schémata, ...)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>data definition language (DDL)</h4>
+                            <div>
+                                Jsou to příkazy pro získání dat z databáze a pro jejich úpravy. Označují se zkráceně DML – Data Manipulation Language („jazyk pro manipulaci s daty“).
+                            </div>
+                            <ul>
+                                <li>SELECT – vybírá data z databáze, umožňuje výběr podmnožiny a řazení dat.</li>
+                                <li>INSERT – vkládá do databáze nová data.</li>
+                                <li>UPDATE – mění data v databázi (editace).</li>
+                                <li>MERGE – kombinace INSERT a UPDATE – data buď vloží (pokud neexistuje odpovídající klíč), pokud existuje, pak je upraví ve stylu UPDATE.</li>
+                                <li>DELETE – odstraňuje data (záznamy) z databáze.</li>
+                                <li>EXPLAIN – speciální příkaz, který zobrazuje postup zpracování SQL příkazu. Pomáhá uživateli optimalizovat příkazy tak, aby byly rychlejší.</li>
+                                <li>SHOW - méně častý příkaz, umožňující zobrazit databáze, tabulky nebo jejich definice</li>
+                            </ul>
+                        </div>
+                        &nbsp;      
+                        &nbsp;
+                        
+                    </div>
+                    <div class="com">
+                        <div class="blog-comments ">
+                            <h4>Komentáře</h4>
+                            <div id="comment-blog">
+                                <ul class="comment-list">
+                                    <li class="comment">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="comments-form">
+                            <h4>Zanech zde komentář !</h4>
+                            <div class="comment-form-main">
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input class="form-control" name="commenter-name" placeholder="Jméno"
+                                                    id="commenter-name" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input class="form-control" name="commenter-email" placeholder="Email"
+                                                    id="commenter-email" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <textarea class="form-control" name="commenter-message"
+                                                    placeholder="Zpráva" id="commenter-message" cols="30"
+                                                    rows="2"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 post-btn">
+                                            <button class="hover-btn-new orange"><span>Zveřejnit</span></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    &nbsp;
+
+                </div>
+                <div class="col-lg-3 col-12 right-single">
+                    <ol>
+                        <li> <a href="#his"><strong>Historie</strong></a></li>
+                        <li> <a href="#jaz"><strong>Popis jazyka</strong></a> </li>
+                        <li> <a href="#verze"><strong>Verze windows</strong></a> 
+                        <ol>
+                            <li><a href="#w1"><strong>Windows 1.0</strong></a></li>
+                            <li><a href="#w2"><strong>Windows 2.0</strong></a></li>
+                            <li><a href="#w3"><strong>Windows 3.0 a 3.1</strong></a></li>
+                            <li><a href="#w95"><strong>Windows 95</strong></a></li>
+                            <li><a href="#w98"><strong>Windows 98 a 98 SE</strong></a></li>
+                            <li><a href="#wMIL"><strong>Windows Millennium Edition</strong></a></li>
+                            <li><a href="#wNT"><strong>Windows NT</strong></a></li>
+                            <li><a href="#w8"><strong>Windows 8</strong></a></li>
+                            <li><a href="#w8-1"><strong>Windows 8.1</strong></a></li>
+                            <li><a href="#w10"><strong>Windows 10</strong></a></li>
+                            <li><a href="#w11"><strong>Windows 11</strong></a></li>
+                        </ol>
+                        </li>   
+                        <li><a href="#prikazy"><strong>Příkazy</strong></a>
+                            <ol> <li><a href="#sit-prik"><strong>Síťové příkazy</strong></a></li>
+                                 <li><a href="#procesy-a-sluzby"><strong>Procesy a služby</strong></a></li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+
+
+
+                <footer class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-xs-12">
+                                <div class="widget clearfix">
+                                    <div class="widget-title">
+                                        <h3>O mně</h3>
+                                    </div>
+                                    <p>Ahoj, jmenuju se Jan Beníšek, chodím do prváku na Střední průmyslové a umělecké
+                                        školy v opavě
+                                    </p>
+                                    <p>Moje nejoblíbenější aktivita jsou hry, u kterých trávím velkou část svého volného
+                                        času, rád
+                                        také tvořím webové stránky a doufám že těmito stránkami na někoho zapůsobím.</p>
+                                    <div class="footer-right">
+                                        <ul class="footer-links-soi">
+                                            <li><a href="https://www.facebook.com/jan.benisek4"><i
+                                                        class="fa fa-facebook"></i></a>
+                                            </li>
+                                            <li><a href="https://github.com/Benisekjan"><i class="fa fa-github"></i></a>
+                                            </li>
+                                        </ul><!-- end links -->
+                                    </div>
+                                </div><!-- end clearfix -->
+                            </div><!-- end col -->
+
+
+
+                            <div class="col-lg-4 col-md-4 col-xs-12">
+                                <div class="widget clearfix">
+                                    <div class="widget-title">
+                                        <h3 id="kontakty">Kontaktní údaje</h3>
+                                    </div>
+
+                                    <ul class="footer-links">
+                                        <li><a href="mailto:#">it2104@sspu-opava.cz</a></li>
+                                        <li>+420 733 456 180</li>
+                                    </ul><!-- end links -->
+                                </div><!-- end clearfix -->
+                            </div><!-- end col -->
+
+                        </div><!-- end row -->
+                    </div><!-- end container -->
+                </footer><!-- end footer -->
+
+                <div class="copyrights">
+                    <div class="container">
+                        <div class="footer-distributed">
+                            <div class="footer-center">
+                                <p class="footer-company-name">Všechna práva vyhrazena. &copy; 2022 <a
+                                        href="#">EdukačníWeb</a>
+                                    Design By : Jan Beníšek</p>
+                            </div>
+                        </div>
+                    </div><!-- end container -->
+                </div><!-- end copyrights -->
+
+                <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+                <!-- ALL JS FILES -->
+                <script src="js/all.js"></script>
+                <!-- ALL PLUGINS -->
+                <script src="js/custom.js"></script>
+
+</body>
+
+</html>

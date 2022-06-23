@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Metas -->
+<title>Edukační Web - Jan Beníšek</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/ikona.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="host_version">
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" >
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header tit-up">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Účet</h4>
+				</div>
+				<div class="modal-body customer-box">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs">
+						<li><a class="active" href="#Login" data-toggle="tab">Přihlášení</a></li>
+						<li><a href="#Registration" data-toggle="tab">Registrace</a></li>
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div class="tab-pane active" id="Login">
+							<form role="form" class="form-horizontal">
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" id="email1" placeholder="Jméno" type="text">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" id="exampleInputPassword1" placeholder="Email"
+											type="email">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-10">
+										<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+											Odeslat
+										</button>
+										<a class="for-pwd" href="javascript:;">Zapomněli jste heslo?</a>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="tab-pane" id="Registration">
+							<form role="form" class="form-horizontal">
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" placeholder="Jméno" type="text">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" id="email" placeholder="Email" type="email">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" id="mobile" placeholder="Tel. Číslo" type="email">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" id="password" placeholder="Heslo" type="password">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-10">
+										<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+											Uložit &amp; Pokračovat
+										</button>
+										<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+											Zrušit</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->
+
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="t-rex-runner-gh-pages/index.html">
+					<img src="images/ikona.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host"
+					 aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item "><a class="nav-link" href="index.html">Hlavní stránka</a></li>
+						<li class="nav-item"><a class="nav-link" href="HTML.html">HTML</a></li>
+						<li class="nav-item active">
+							<a class="nav-link " href="CSS.html">CSS </a>
+						</li>
+						<li class="nav-item ">
+							<a class="nav-link " href="C.html">Jazyk C
+							</a>
+
+						</li>
+						<li class="nav-item"><a class="nav-link" href="Linux.html">LINUX</a></li>
+						<li class="nav-item"><a class="nav-link" href="Windows.html">WINDOWS</a></li>
+						<li class="nav-item"><a class="nav-link" href="Bootstrap.html">BOOTSTRAP</a></li>
+
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a class="hover-btn-new log orange" href="#" data-toggle="modal"
+								data-target="#login"><span>Účet</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!-- End header -->
+
+	<div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel"
+		data-pause="hover" data-interval="false">
+		<!-- Indicators -->
+
+
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active">
+				<div id="home" class="first-section" style="background-image:url('images/Hlavni-stranka.jpg');">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-center">
+									<div class="big-tagline">
+										<h2> <strong>CSS</strong> </h2>
+									</div>
+								</div>
+							</div><!-- end row -->
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<!-- Left Control -->
+
+		</div>
+	</div>
+
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>CSS</h3>
+					<p class="lead"> CSS (Cascading Style Sheets) česky kaskádové styly je jazyk pro popis elementů
+						napsaných v jazycích XTML, XHTML nebo XML </p>
+                </div>
+            </div><!-- end title -->
+        </div><!-- end carousel -->
+    </div><!-- end col -->
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 blog-post-single">
+                    <div class="container">
+
+                        
+                        <h1 id="his">Historie</h1>
+                        <div>Jazyk byl navržen standardizační organizací W3C, autorem prvotního návrhu
+                            byl Håkon
+                            Wium Lie. Byly vydány CSS1, CSS2 a CSS3. Dne 7. června 2011 byla dokončena
+                            revize
+                            CSS 2.1. Hlavním smyslem je umožnit návrhářům oddělit vzhled dokumentu od
+                            jeho
+                            struktury a obsahu. Původně to měl umožnit už jazyk HTML, ale v důsledku
+                            nedostatečných standardů a konkurenčního boje výrobců prohlížečů se vyvinul
+                            jinak.
+                            Starší verze HTML obsahují celou řadu elementů, které nepopisují obsah a
+                            strukturu
+                            dokumentu, ale i způsob jeho zobrazení. Z hlediska zpracování dokumentů a
+                            vyhledávání informací není takový vývoj žádoucí.</div>
+                        &nbsp;
+                        &nbsp;
+                        <h2 id="CSS1">CSS 1 </h2>
+                        <div>První verze CSS zavedla syntax (používaný ve všech následujících verzích),
+                            způsob
+                            vybírání prvků přes selektory, několik pseudotříd, hodnoty a jejich
+                            jednotky. </div>
+                        &nbsp;
+                        <h2 id="CSS2">CSS 2</h2>
+                        <div>CSS verze 2 rozšířila možnosti stylování několika dalšími parametry, např.:
+                        </div>
+                        <ul>
+                            <li>outline – vnější ohraničení</li>
+                            <li>max-height, max-width, min-height, min-width – minimální a maximální
+                                šířka nebo
+                                výška elementu</li>
+                            <li>content – nastavitelný obsah elementu</li>
+                            <li>counter – nástroj pro číslování kapitol</li>
+                            <li>quotes – styl citací</li>
+                            <li>clip – ořezávání</li>
+                            <li>cursor – kurzor nad elementem</li>
+                            <li>position – možnost pozicovat element v řádku, v bloku, absolutně,
+                                relativně, …
+                            </li>
+                            <li>top, bottom, right, left – okrajové hodnoty pro position:absolute;</li>
+                            <li>overflow – zobrazení při přetékání obsahu</li>
+                            <li>visibility – viditelnost elementů</li>
+                            <li>z-index – možnosti překrývání</li>
+                            <li>page-break, orphans, widows – typografická pravidla pro dělení stránek
+                            </li>
+                            <li>table-layout, border-collapse, border-spacing, caption-side, empty-cells
+                                – nové
+                                možnosti pro zobrazení tabulek</li>
+                            <li>direction – směr psaní textu</li>
+                        </ul>
+                        <h2 id="CSS3">CSS 3</h2>
+                        <div>CSS 3 se mj. pojí s budoucím standardem HTML5, jež je má plně využívat.
+                            Přináší
+                            následující možnosti:</div>
+                        <ul>
+                            <li>animace – CSS3 přímo podporuje animaci elementů (jejich vlastností),
+                                doposud se
+                                animace dělaly přes DHTML, např. jQuery</li>
+                            <li>dodatečné možnosti stylování pozadí blokových elementů, včetně např.
+                                oříznutí
+                                jejich pozadí, vržených stínů nebo zakulacených okrajů</li>
+                            <li>dodatečná pravidla pro přetékání obsahu blokových elementů</li>
+                            <li>opacita – míra neprůhlednosti prvků</li>
+                            <li>další podpora stránkovaného obsahu – záložky a možnosti dělení textu
+                            </li>
+                            <li>flexibilní blokové elementy</li>
+                            <li>dodatečné vlastnosti pro písma – načítání písma z externího zdroje,
+                                přizpůsobení
+                                velikosti při nízké čitelnosti, zužování/rozšiřování písma</li>
+                            <li>vlastnosti pro generovaný obsah – zkracování obsahu s možností expanze,
+                                přesunování elementů dále ve stránce</li>
+                            <li>mřížky (zatím nikde neimplementované)</li>
+                            <li>cílové odkazy – jak a kde se mají otevírat</li>
+                            <li>vlastnosti pro drag'n'drop</li>
+                            <li>nové vlastnosti pro marquee</li>
+                            <li>automatický vícesloupcový layout</li>
+                            <li>nové vlastnosti Ruby</li>
+                            <li>vlastnosti pro čtený text</li>
+                            <li>2D a 3D transformace</li>
+                            <li>vlastnosti spolupracující s navigací</li>
+                            <li>uživatelsky definované vlastnosti</li>
+
+                        </ul>
+                        <h3>Kategorie</h3>
+                        <div>Přizpůsobení vlastností hypertextových dokumentů umožnilo CSS 1 v
+                            následujících
+                            oblastech:</div>
+                        <ul>
+                            <li>vlastnosti písma</li>
+                            <li>barvy textu a pozadí</li>
+                            <li>vlastnosti textu</li>
+                            <li>vlastnosti blokových elementů</li>
+                            <li>způsoby zobrazení prvků</li>
+                            <li>řízení pozice</li>
+                        </ul>
+                        &nbsp;
+                        <h4 id="jed">Jednotky délky</h4>
+                        <ul>
+                            <li>% – procenta, jednotka relativní vůči implicitnímu rozměru, zapisována
+                                bez
+                                mezery, např. font-size:110% znamená velikost o 10 % větší než ta
+                                výchozí</li>
+                            <li>pt – typografický bod, výchozí jednotka je 1/72 palce</li>
+                            <li>px – 0,75 pt</li>
+                            <li>pc – pica, 1 pc = 12 pt</li>
+                            <li>cm – centimetr</li>
+                            <li>mm – milimetr</li>
+                            <li>in – palec</li>
+                            <li>em – čtverčík, je rovna základní výšce písma</li>
+                            <li>ex – výška písmene „x“, je relativní k použitému písmu</li>
+                        </ul>
+                        <h4 id="barvy">Barvy</h4>
+                        <div>V CSS máme 3 druhy barev</div>
+                        <ul>
+                            <li>RGB</li>
+                            <li>HEX</li>
+                            <li>HSL</li>
+                        </ul>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-9 col-12">
+                                <div class="course-item">
+                                    <div class="image-blog">
+                                        <img src="images/rgb.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="course-br">
+                                        <div class="course-title">
+                                            <h2>RGB</h2>
+                                        </div>
+                                        <div class="blog-desc">
+
+                                            <p> Barevný model RGB neboli červená-zelená-modrá je
+                                                aditivní způsob
+                                                míchání barev používaný v barevných monitorech a
+                                                projektorech
+                                                (jde o míchání vyzařovaného světla), tudíž nepotřebuje
+                                                vnější
+                                                světlo (monitor zobrazuje i v naprosté tmě) na rozdíl
+                                                např. od
+                                                CMYK modelu. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- end col -->
+                            <div class="col-lg-6 col-md-9 col-12">
+                                <div class="course-item">
+                                    <div class="image-blog">
+                                        <img src="images/hex-barvy.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="course-br">
+                                        <div class="course-title">
+                                            <h2>HEX</h2>
+                                        </div>
+                                        <div class="blog-desc">
+
+                                            <p> Hexadecimální barva je určena pomocí: #RRGGBB, kde RR
+                                                (červená),
+                                                GG (zelená) a BB (modrá) hexadecimální celá čísla určují
+                                                složky
+                                                barvy. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- end col -->
+
+
+                        </div>
+
+
+                        &nbsp;
+                        <h2 id="syn">CSS syntaxe</h2>
+                        <div class="col-lg-6 col-md-9 col-12">
+                            <img src="images/syntaxe.png" alt="" class="img-fluid">
+                        </div>
+                        &nbsp;
+                        <h2 id="mar">Margin, Padding, Border</h2>
+                        &nbsp;
+                        <div class="col-lg-6 col-md-9 col-12">
+                            <img src="images/okraje.png" alt="" class="img-fluid">
+                        </div>
+                        &nbsp;
+                        <h2 id="ali">CSS align</h2>
+                        <div> .center {</div>
+                        <div> &nbsp; text-align: center;</div>
+                        <div> &nbsp; border: 3px solid green;</div>
+                        <div>}</div>
+
+                    </div><!-- end section -->
+                        
+                   
+                    <div >
+                        <div class="blog-comments ">
+                            <h4>Komentáře</h4>
+                            <div id="comment-blog">
+                                <ul class="comment-list">
+                                    <li class="comment">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="comments-form">
+                            <h4>Zanech zde komentář !</h4>
+                            <div class="comment-form-main">
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input class="form-control" name="commenter-name" placeholder="Jméno"
+                                                    id="commenter-name" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input class="form-control" name="commenter-email" placeholder="Email"
+                                                    id="commenter-email" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <textarea class="form-control" name="commenter-message"
+                                                    placeholder="Zpráva" id="commenter-message" cols="30"
+                                                    rows="2"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 post-btn">
+                                            <button class="hover-btn-new orange"><span>Zveřejnit</span></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    &nbsp;
+
+                </div>
+                <div class="col-lg-3 col-12 right-single">
+                    <ol>
+                        <li> <a href="#his"><strong>Historie</strong></a></li>
+                        <li> <a href="#CSS1"><strong>CSS 1</strong></a></li>
+                        <li> <a href="#CSS2"><strong>CSS 2</strong></a> </li>
+                        <li> <a href="#CSS3"><strong>CSS 3</strong></a> </li>   
+                        <li><a href="#jed"><strong>Jednotky délky</strong></a></li>
+                        <li> <a href="#barvy"> <strong> Barvy</strong></a> </li>
+                        <li> <a href="#syn"><strong>CSS syntaxe</strong></a></li>
+                        <li><a href="#mar"><strong>Margin, Padding, Border</strong></a></li>
+                        <li><a href="#ali"><strong>CSS align</strong></a></li>
+                    </ol>
+                </div>
+            </div> 
+        </div>
+
+
+                <footer class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-xs-12">
+                                <div class="widget clearfix">
+                                    <div class="widget-title">
+                                        <h3>O mně</h3>
+                                    </div>
+                                    <p>Ahoj, jmenuju se Jan Beníšek, chodím do prváku na Střední průmyslové a umělecké
+                                        školy v opavě
+                                    </p>
+                                    <p>Moje nejoblíbenější aktivita jsou hry, u kterých trávím velkou část svého volného
+                                        času, rád
+                                        také tvořím webové stránky a doufám že těmito stránkami na někoho zapůsobím.</p>
+                                    <div class="footer-right">
+                                        <ul class="footer-links-soi">
+                                            <li><a href="https://www.facebook.com/jan.benisek4"><i
+                                                        class="fa fa-facebook"></i></a>
+                                            </li>
+                                            <li><a href="https://github.com/Benisekjan"><i class="fa fa-github"></i></a>
+                                            </li>
+                                        </ul><!-- end links -->
+                                    </div>
+                                </div><!-- end clearfix -->
+                            </div><!-- end col -->
+
+
+
+                            <div class="col-lg-4 col-md-4 col-xs-12">
+                                <div class="widget clearfix">
+                                    <div class="widget-title">
+                                        <h3 id="kontakty">Kontaktní údaje</h3>
+                                    </div>
+
+                                    <ul class="footer-links">
+                                        <li><a href="mailto:#">it2104@sspu-opava.cz</a></li>
+                                        <li>+420 733 456 180</li>
+                                    </ul><!-- end links -->
+                                </div><!-- end clearfix -->
+                            </div><!-- end col -->
+
+                        </div><!-- end row -->
+                    </div><!-- end container -->
+                </footer><!-- end footer -->
+
+                <div class="copyrights">
+                    <div class="container">
+                        <div class="footer-distributed">
+                            <div class="footer-center">
+                                <p class="footer-company-name">Všechna práva vyhrazena. &copy; 2022 <a
+                                        href="#">EdukačníWeb</a>
+                                    Design By : Jan Beníšek</p>
+                            </div>
+                        </div>
+                    </div><!-- end container -->
+                </div><!-- end copyrights -->
+           
+        
+                <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+                <!-- ALL JS FILES -->
+                <script src="js/all.js"></script>
+                <!-- ALL PLUGINS -->
+                <script src="js/custom.js"></script>
+
+</body>
+
+</html>
